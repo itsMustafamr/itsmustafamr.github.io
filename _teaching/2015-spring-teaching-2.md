@@ -1,20 +1,21 @@
 ---
-title: "Teaching experience 2"
+title: "COM S 309 (Software Development Practices)"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
+type: "Undergraduate course"
+permalink: /teaching/2015-spring-coms309
+venue: "Iowa State University, Computer Science Department"
 date: 2015-01-01
-location: "City, Country"
+location: "Ames, Iowa, USA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Taught COM S 309, focusing on major software engineering topics and preparing students to lead medium-sized software projects. Emphasized teamwork, accountability, project management, and professional ethics through a semester-long group project.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+**Key topics/goals:**
+- Software development lifecycle: requirements, design, implementation
+- Project management: process models, planning, scheduling, risk management
+- Software artifacts and documentation
+- Configuration management & source control
+- Testing, reviews, and quality assurance
+- Legal and ethical principles in computing
+- Information management, relational & object-oriented models
+- Networking basics: DNS, IP, HTTP, client/server APIs
