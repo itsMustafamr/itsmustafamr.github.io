@@ -3,4 +3,13 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
---- 
+---
+
+<div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;">
+  {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+  {% for project in sorted_projects %}
+    <div style="flex:1 1 350px;max-width:400px;min-width:300px;">
+      {% include project-card.html project=project %}
+    </div>
+  {% endfor %}
+</div> 
