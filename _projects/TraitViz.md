@@ -9,7 +9,7 @@ tags:
   - Depth
   - NYUD
   - Pinhole camera
-repo_url: "https://github.com/yourusername/rgbd-demo"
+repo_url: "https://github.com/itsMustafamr/Trait_viz"
 ---
 
 Advanced depth estimation and 3D reconstruction using RGBD data from pinhole cameras.  
