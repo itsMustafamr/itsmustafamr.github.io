@@ -12,8 +12,10 @@ tags:
 repo_url: "https://github.com/itsMustafamr/Trait_viz"
 ---
 
-Advanced depth estimation and 3D reconstruction using RGBD data from pinhole cameras.  
+Advanced depth estimation and 3D reconstruction using RGBD data from pinhole cameras.
 Implements state-of-the-art algorithms on the NYUD dataset.
+
+<!--more-->
 
 **Demo Video:**
 
