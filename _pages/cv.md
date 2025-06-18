@@ -123,14 +123,14 @@ Service and leadership
 
 - **Prompt-to-Perception: Integrated Text-to-Image Pipeline**  
   Developed an end-to-end system for text-to-image generation using prompt refinement and Stable Diffusion 2.1. Improved prompt quality 3× (ROUGE metrics) via T5-Small, with an average prompt-image alignment of 0.72.  
-  [Code](https://github.com/rah757/KarmaAI) | [Demo Video](https://drive.google.com/file/d/1VSBz1eQgYxSWjtFrwq7wmQGh1h4VorDc/view?usp=sharing)
+  [Code](https://github.com/rah757/KarmaAI) | [Demo Video](https://drive.google.com/file/d/1VSBz1eQgYxSWjtFrwq7wmQGh1h4VorDc/view?usp=sharing) | [Document](https://drive.google.com/file/d/1VSBz1eQgYxSWjtFrwq7wmQGh1h4VorDc/view?usp=sharing)
 
 - **TraitViz – Interactive PubMed Annotation Visualizer**  
   Built a full-stack web app for automatic annotation and visualization of PubMed articles with entity extraction and SVG parse graphs.  
-  [Code](https://github.com/itsMustafamr/Trait_viz) | [Video](https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing)
+  [Code](https://github.com/itsMustafamr/Trait_viz) | [Video](https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing) | [Document](https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing)
 
 - **Diseased Plant Detection**  
-  Created ResNet50, VGG16, and custom CNNs for new plant disease detection across 38 vision classes.
+  Created ResNet50, VGG16, and custom CNNs for new plant disease detection across 38 vision classes. [Document](https://drive.google.com/file/d/1xIN8EN7gbcpu1FSt5s0U76oeCbJRlQta/view?usp=sharing)
 
 ---
 
@@ -148,3 +148,4 @@ Service and leadership
 ---
 
 ## [Download PDF Version](https://drive.google.com/file/d/1vDlZ2GKlIlHNLza2R6J4QNyFQZjDzVv0/view?usp=sharing)
+
