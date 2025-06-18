@@ -1,25 +1,16 @@
 {% include base_path %}
 
-{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endif %}
-  </ul>
+<div style="text-align:center; margin-bottom: 10px;">
+  <a href="mailto:mr.mohdmustafa007@gmail.com" style="font-size:48px; margin:0 10px;"><i class="fa fa-envelope"></i></a>
+  <a href="https://scholar.google.com/citations?user=PS_CX0AAAAAJ" style="font-size:48px; margin:0 10px;"><i class="fa fa-graduation-cap"></i></a>
+  <a href="https://github.com/itsmustafamr" style="font-size:48px; margin:0 10px;"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/mohammed-musthafa-r/" style="font-size:48px; margin:0 10px;"><i class="fab fa-linkedin"></i></a>
+  <a href="/cv" style="font-size:48px; margin:0 10px;"><i class="fa fa-briefcase"></i></a>
+  <a href="/feed.xml" style="font-size:48px; margin:0 10px;"><i class="fa fa-rss"></i></a>
 </div>
-{% endif %}
-
-<div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' %}}
+<div style="text-align:center; margin-bottom: 10px;">
+  You can reach me via email at <a href="mailto:mr.mohdmustafa007@gmail.com">mr.mohdmustafa007@gmail.com</a>.
+</div>
+<div style="text-align:center; font-size:16px; margin-top:10px;">
+  &copy; Copyright {{ "now" | date: '%Y' }} Mohammed Musthafa Rafi. Powered by Jekyll with al-folio theme. Hosted by GitHub Pages. Last updated: {{ "now" | date: '%B %d, %Y' }}.
 </div>
