@@ -1,0 +1,68 @@
+/* Custom styles for the homepage */
+.page__content {
+    max-width: 100%;
+    padding-right: 0;
+}
+
+.page__content h1 {
+    font-weight: 700;
+    color: #333;
+}
+
+.page__content h2 {
+    color: #444;
+    border-bottom: none;
+}
+
+.page__content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.page__content ul li {
+    margin-bottom: 0.5em;
+}
+
+.page__content a {
+    text-decoration: none;
+    color: #1e88e5;
+}
+
+.page__content a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 64em) {
+    .page__content {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Style for footer icons */
+.footer-icons {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-icons a {
+    font-size: 48px;
+    margin: 0 10px;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #0366d6;
+}
+
+/* Fix for Font Awesome icons */
+.fa, .fas, .far, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+} 
