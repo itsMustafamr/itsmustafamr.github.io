@@ -24,6 +24,7 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.dark .cv-section {
-    background-color: #333;
+html[data-theme="dark"] .cv-section {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
 } 
