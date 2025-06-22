@@ -21,6 +21,7 @@
   border: 0 !important;
   border-radius: $border-radius;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     background-color: mix(white, #000, 20%);
@@ -48,13 +49,15 @@
   /* for dark backgrounds */
 
   &--inverse {
-    color: var(--global-text-color-light) !important;
-    border: 1px solid var(--global-border-color) !important; /* override*/
-    background-color: var(--global-bg-color);
+    color: #e2e8f0 !important;
+    border: 1px solid #4a5568 !important; /* override*/
+    background-color: #2d3748;
 
     &:hover {
       color: #fff !important;
-      border-color: var(--global-text-color-light);
+      background-color: #4a5568;
+      border-color: #718096;
+      transform: translateY(-2px);
     }
   }
 

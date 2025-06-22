@@ -13,8 +13,8 @@ redirect_from:
     <p>This is the curriculum vitae of {{ site.author.name }}.</p>
   </div>
   <div class="cv-pdf">
-    <a href="https://drive.google.com/file/d/1vDlZ2GKlIlHNLza2R6J4QNyFQZjDzVv0/view?usp=sharing" class="btn btn--inverse" target="_blank">
-      <i class="fas fa-file-pdf"></i>&nbsp;Download PDF
+    <a href="https://drive.google.com/file/d/1vDlZ2GKlIlHNLza2R6J4QNyFQZjDzVv0/view?usp=sharing" class="btn btn--inverse" target="_blank" aria-label="Download PDF">
+      <i class="fa-solid fa-file-arrow-down"></i>
     </a>
   </div>
 </div>
@@ -22,10 +22,11 @@ redirect_from:
 <div class="cv-section">
   <h2>General Information</h2>
   <ul style="list-style-type: none; padding-left: 0;">
-    <li><strong>Full Name</strong>Mohammed Musthafa Rafi</li>
-    <li><strong>Email</strong> mohd7@iastate.edu</li>
-    <li><strong>Address</strong> 1111 Woi Rd. 0035A Roy J Carver Colab, Ames, IA 50014</li>
-    <li><strong>Website</strong> <a href="https://itsmustafamr.github.io/">https://itsmustafamr.github.io/</a></li>
+    <!-- <li><strong>Full Name:</strong>Mohammed Musthafa Rafi</li>
+    <li><strong>Email:</strong> mohd7@iastate.edu</li> -->
+    <!-- <li><strong>Address</strong> 1111 Woi Rd. 0035A Roy J Carver Colab, Ames, IA 50014</li> -->
+    <!-- <li><strong>Address:</strong> ISU Laboratory of Mechanics 2519 Union Dr, Ames, IA 50011</li> -->
+    <!-- <li><strong>Website:</strong> <a href="https://itsmustafamr.github.io/">https://itsmustafamr.github.io/</a></li> -->
   </ul>
 </div>
 
