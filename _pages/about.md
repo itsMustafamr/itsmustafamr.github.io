@@ -1,7 +1,7 @@
 ---
 permalink: /
 #title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
-title: "Academic personal website"
+title: "About Me... "
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,7 +9,22 @@ redirect_from:
 ---
 
 
-this is fun
+
+
+
+
+I am doing my Master's in Artificial Intelligence at Iowa State University along with my PhD in Computer Science. My research involves developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, focusing on novel capture setups with stationary cameras and rotating objects. I work with advanced segmentation techniques, self-supervised methods like NeRF-SOS, and attention-aware architectures for automatic object discovery and clean 3D reconstruction.
+
+
+Current Position
+Research Assistant, lab of mechanics, Iowa State University
+
+news
+Mar 10, 2024	New NSF Grant on AI-enabled Atomic Force Microscopy
+Feb 15, 2024	Our paper “DIMAT: Decentralized Iterative Merging-and-Training for Deep Learning Models” accepted to CVPR 2024!
+Jan 20, 2024	Excited to announce our NSF EAGER award on “LLM-Powered Framework for G-Code Comprehension and Retrieval” ($200,000)!
+Dec 05, 2023	Our paper on “Neural PDE Solvers for Irregular Domains” accepted to Computer-Aided Design journal!
+Oct 15, 2023	Our team was a finalist in the NSF NAMRC Bluesky Manufacturing Competition for our work on “Conversational AI as a game-changer in manufacturing”!
 <!-- 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! -->
 
