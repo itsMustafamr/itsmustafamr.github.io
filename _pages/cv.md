@@ -14,7 +14,7 @@ redirect_from:
       <p>This is the curriculum vitae of {{ site.author.name }}.</p>
     </div>
     <div class="cv-pdf">
-      <a href="https://drive.google.com/file/d/1vDlZ2GKlIlHNLza2R6J4QNyFQZjDzVv0/view?usp=sharing" class="btn btn--inverse" target="_blank" aria-label="Download PDF">
+      <a href="https://drive.google.com/file/d/1NSafYfmzddpe32ft9-ZsD5zoZeAHjO4B/view?usp=sharing" class="btn btn--inverse" target="_blank" aria-label="Download PDF">
         <i class="fa-solid fa-file-arrow-down"></i>
       </a>
     </div>
