@@ -77,7 +77,7 @@ redirect_from:
 
   <div class="cv-section-card">
     <h2>Research / Internship</h2>
-    <strong>Graduate Research Assistant</strong><br>
+    <strong>Research</strong><br>
     <em>Iowa State University, Ames, IA</em> | Aug 2024 – Present
     <ul>
       <li>
