@@ -34,7 +34,7 @@ redirect_from:
   <div class="cv-section-card">
     <h2>Education</h2>
     <div class="cv-edu-item">
-      <span class="cv-edu-years">2023 - Present</span>
+      <span class="cv-edu-years">August 2023 - Present</span>
       <div class="cv-edu-details">
         <strong>Ph.D. Candidate in Computer Science</strong><br>
         <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Iowa, USA</span>
@@ -44,7 +44,7 @@ redirect_from:
       </div>
     </div>
     <div class="cv-edu-item">
-      <span class="cv-edu-years">2023 - 2025</span>
+      <span class="cv-edu-years">August 2023 - 2025</span>
       <div class="cv-edu-details">
         <strong>Master of Science in Artificial Intelligence</strong><br>
         <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Iowa, USA</span>
@@ -54,7 +54,7 @@ redirect_from:
       </div>
     </div>
     <div class="cv-edu-item">
-      <span class="cv-edu-years">2018 - 2022</span>
+      <span class="cv-edu-years">July 2018 - July 2022</span>
       <div class="cv-edu-details">
         <strong>Bachelor of Science in Electrical and Electronics Engineering</strong><br>
         <span class="cv-edu-institution"><i class="fa fa-university"></i> APJ Abdul Kalam Technological University, Kerala, INDIA</span>
@@ -67,12 +67,27 @@ redirect_from:
 
   <div class="cv-section-card">
     <h2>Experience</h2>
-    <strong>Graduate Teaching Assistant</strong><br>
-    <em>Iowa State University</em>
-    <ul>
-      <li><strong>COM S 336 (Computer Graphics) 2023-2024</strong>: Conducted labs and guided students in 3D rendering and visualization techniques.</li>
-      <li><strong>COM S 309 (Software Development Practices) 2023-2024</strong>: Led labs and mentored students in best practices.</li>
-    </ul>
+    <div class="cv-edu-item">
+      <span class="cv-edu-years">2023 - Present</span>
+      <div class="cv-edu-details">
+        <strong>Graduate Teaching Assistant</strong><br>
+        <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University</span>
+        <ul>
+          <li>
+            <strong>COM S 309 (Software Development Practices)</strong><br>
+            <span class="cv-edu-years">Spring 2023, Fall 2024</span><br>
+            Guided and mentored 8 student teams with 4–5 members each, helping them with software-development practices and collaborative project work.<br>
+            Held lab sessions, assisted students with coding and debugging, and supported their use of tools like GitHub for project management.
+          </li>
+          <li>
+            <strong>COM S 336 (Computer Graphics)</strong><br>
+            <span class="cv-edu-years">Fall 2023</span><br>
+            Prepared quizzes on TopHat, conducted office hours, and provided student support via Piazza discussions<br>
+            Conducted labs focused on teaching 3-D rendering, visualization techniques, and basic graphics programming
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <div class="cv-section-card">
