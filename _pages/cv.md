@@ -103,8 +103,8 @@ redirect_from:
             Developed a novel turntable-style pipeline integrating NeRF-SOS for stationary-camera capture, achieving &lt;2° reprojection error from 150 fixed-camera images. Implemented collaborative contrastive loss for zero-annotation 3D segmentation, improving IoU by 15% over supervised baselines. Leveraged SAM2-based masking to reduce training time by 30%, generating watertight meshes and per-object neural fields for CAD/robotics.
           </li>
           <li>
-            <strong>TabPFN Foundation Model – Efficiency Enhancement for Real-World Tabular Data</strong><br>
-            Applied TabPFN to real-world classification tasks, achieving 5,140× speedup over gradient-boosted methods with SOTA accuracy. Developed custom feature engineering and ensembling, improving accuracy by 12% on imbalanced healthcare data. Extended TabPFN with CUDA optimization and SHAP-based interpretability for production-scale datasets (up to 10K samples).
+            <strong>TabPFN for Efficient Tabular Data Modeling</strong><br>
+            Applied TabPFN, a transformer-based foundation model, to real-world tabular data tasks (e.g., classification, regression), achieving high accuracy with minimal preprocessing. Improved efficiency by optimizing inference speed, enabling scalable deployment in time-sensitive applications.
           </li>
         </ul>
       </div>
