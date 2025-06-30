@@ -92,18 +92,23 @@ redirect_from:
 
   <div class="cv-section-card">
     <h2>Research / Internship</h2>
-    <strong>Research</strong><br>
-    <em>Iowa State University, Ames, IA</em> | Aug 2024 – Present
-    <ul>
-      <li>
-        <strong>Stationary-Camera Neural Radiance Field (NeRF):</strong><br>
-        Developed a turntable-style pipeline by reversing object rotation angles (+θ → –θ), enabling COLMAP to achieve <2° reprojection error from 150 stationary-camera images. Automated SAM2-based masking to strip backgrounds, reducing training time by 30% and improving PSNR by +1.8 dB. Integrated into Nerfstudio, generating photorealistic 360° renders and watertight meshes.
-      </li>
-      <li>
-        <strong>Neural Radiance Fields – Pose Optimization & Quality Enhancement:</strong><br>
-        Designed pose-refinement loops to fine-tune COLMAP poses, reducing pose RMSE by 22% and boosting chamfer-distance accuracy by 18%. Improved SSIM from 0.88 to 0.93 on proprietary datasets.
-      </li>
-    </ul>
+    <div class="cv-edu-item">
+      <span class="cv-edu-years">August 2024 - Present</span>
+      <div class="cv-edu-details">
+        <strong>Research</strong><br>
+        <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Ames, IA</span>
+        <ul>
+          <li>
+            <strong>NeRF-SOS: Self-Supervised Object Segmentation for Stationary-Camera NeRF</strong><br>
+            Developed a novel turntable-style pipeline integrating NeRF-SOS for stationary-camera capture, achieving &lt;2° reprojection error from 150 fixed-camera images. Implemented collaborative contrastive loss for zero-annotation 3D segmentation, improving IoU by 15% over supervised baselines. Leveraged SAM2-based masking to reduce training time by 30%, generating watertight meshes and per-object neural fields for CAD/robotics.
+          </li>
+          <li>
+            <strong>TabPFN Foundation Model – Efficiency Enhancement for Real-World Tabular Data</strong><br>
+            Applied TabPFN to real-world classification tasks, achieving 5,140× speedup over gradient-boosted methods with SOTA accuracy. Developed custom feature engineering and ensembling, improving accuracy by 12% on imbalanced healthcare data. Extended TabPFN with CUDA optimization and SHAP-based interpretability for production-scale datasets (up to 10K samples).
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <div class="cv-section-card">
