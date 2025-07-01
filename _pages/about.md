@@ -9,15 +9,16 @@ redirect_from:
 ---
 
 
-I am doing my Master's in Artificial Intelligence at Iowa State University along with my PhD in Computer Science. My research involves developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, focusing on novel capture setups with stationary cameras and rotating objects. I work with advanced segmentation techniques, self-supervised methods like NeRF-SOS, and attention-aware architectures for automatic object discovery and clean 3D reconstruction.
+<!-- I am doing my Master's in Artificial Intelligence at Iowa State University along with my PhD in Computer Science. My research involves developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, focusing on novel capture setups with stationary cameras and rotating objects. I work with advanced segmentation techniques, self-supervised methods like NeRF-SOS, and attention-aware architectures for automatic object discovery and clean 3D reconstruction. -->
+yooo what's uppp!!
 
 
 ## Current Position
 Research Assistant, lab of mechanics, Iowa State University  
-## Education
+<!-- ## Education
 Master of Science in Artificial Intelligence, Iowa State University, 2023 - Present  
 Bachelor of Science in Electrical and Electronics Engineering, APJ Abdul Kalam Technological University, Kerala, India, 2018 - 2022
-
+ -->
 
 ## Recent updates
 <!-- Mar 10, 2024	New NSF Grant on AI-enabled Atomic Force Microscopy

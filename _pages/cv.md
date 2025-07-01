@@ -110,19 +110,43 @@ redirect_from:
       </div>
     </div>
   </div>
-
-  <div class="cv-section-card">
-    <h2>Skills</h2>
+<div class="cv-section-card">
+  <h2>Technical Skills</h2>
+  <div class="cv-skills-category">
+    <h3><em>Programming Languages</em></h3>
     <ul>
-      <li><strong>Programming:</strong> Python, R, C++, Java, SQL, JavaScript, LaTeX</li>
-      <li><strong>Machine Learning:</strong> PyTorch, TensorFlow, Scikit-learn, Keras, CUDA, Deep Learning, LangChain, Transformers, MLflow</li>
-      <li><strong>Cloud & DevOps:</strong> AWS, Docker, GitLab CI/CD, Azure Functions</li>
-      <li><strong>Data Analysis:</strong> Pandas, NumPy, Matplotlib, Seaborn, Jupyter</li>
-      <li><strong>Web Development:</strong> React, Node.js, Express, MongoDB</li>
-      <li><strong>Other:</strong> Git, Linux, Agile, Computer Vision, NLP, Distributed Systems</li>
-      <li><strong>Monitoring:</strong> Grafana, Kibana</li>
+      <li>Python, C++, CUDA, JavaScript, MATLAB, R</li>
     </ul>
   </div>
+  <hr>
+  <div class="cv-skills-category">
+    <h3><em>Machine Learning & AI</em></h3>
+    <ul>
+      <li>PyTorch, TensorFlow, scikit-learn, Keras, OpenCV, Transformers, Diffusion Models</li>
+    </ul>
+  </div>
+  <hr>
+  <div class="cv-skills-category">
+    <h3><em>High-Performance Computing</em></h3>
+    <ul>
+      <li>CUDA, MPI, OpenMP, GPU Computing, HPC Cluster Management</li>
+    </ul>
+  </div>
+  <hr>
+  <div class="cv-skills-category">
+    <h3><em>CAD & Engineering Software</em></h3>
+    <ul>
+      <li>SolidWorks, ANSYS, FEA, CFD</li>
+    </ul>
+  </div>
+  <hr>
+  <div class="cv-skills-category">
+    <h3><em>Data Analysis & Visualization</em></h3>
+    <ul>
+      <li>Pandas, NumPy, Matplotlib, Plotly, Paraview, VTK</li>
+    </ul>
+  </div>
+</div>
 
   <div class="cv-section-card">
     <h2>Projects</h2>
