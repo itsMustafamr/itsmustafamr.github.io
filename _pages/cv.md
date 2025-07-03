@@ -150,38 +150,63 @@ redirect_from:
 
   <div class="cv-section-card">
     <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Prompt-to-Perception: Integrated Text-to-Image Pipeline</strong><br>
-        Developed an end-to-end system for text-to-image generation using prompt refinement and Stable Diffusion 2.1. Improved prompt quality 3× (ROUGE metrics) via T5-Small, with an average prompt-image alignment of 0.72.<br>
-        <a href="https://github.com/rah757/KarmaAI">Code</a> | <a href="https://drive.google.com/file/d/1VSBz1eQgYxSWjtFrwq7wmQGh1h4VorDc/view?usp=sharing">Demo Video</a> | <a href="https://drive.google.com/file/d/1VSBz1eQgYxSWjtFrwq7wmQGh1h4VorDc/view?usp=sharing">Document</a>
-      </li>
-      <li>
-        <strong>TraitViz – Interactive PubMed Annotation Visualizer</strong><br>
-        Built a full-stack web app for automatic annotation and visualization of PubMed articles with entity extraction and SVG parse graphs.<br>
-        <a href="https://github.com/itsMustafamr/Trait_viz">Code</a> | <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Video</a> | <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Document</a>
-      </li>
-      <li>
-        <strong>Diseased Plant Detection</strong><br>
-        Created ResNet50, VGG16, and custom CNNs for new plant disease detection across 38 vision classes. <a href="https://drive.google.com/file/d/1xIN8EN7gbcpu1FSt5s0U76oeCbJRlQta/view?usp=sharing">Document</a>
-      </li>
-    </ul>
+    <div class="cv-skills-category">
+      <h3><em>Prompt-to-Perception: Integrated Text-to-Image Pipeline</em></h3>
+      <ul>
+        <li>Developed an end-to-end system for text-to-image generation using prompt refinement and Stable Diffusion 2.1.</li>
+        <li>Improved prompt quality 3× (ROUGE metrics) via T5-Small, with an average prompt-image alignment of 0.72.</li>
+        <li>
+          <a href="https://github.com/rah757/KarmaAI">Code</a> |
+          <a href="https://drive.google.com/file/d/1VSBz1eQgYxSWjtFrwq7wmQGh1h4VorDc/view?usp=sharing">Demo Video</a> |
+          <a href="https://drive.google.com/file/d/1VSBz1eQgYxSWjtFrwq7wmQGh1h4VorDc/view?usp=sharing">Document</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="cv-skills-category">
+      <h3><em>TraitViz – Interactive PubMed Annotation Visualizer</em></h3>
+      <ul>
+        <li>Built a full-stack web app for automatic annotation and visualization of PubMed articles with entity extraction and SVG parse graphs.</li>
+        <li>
+          <a href="https://github.com/itsMustafamr/Trait_viz">Code</a> |
+          <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Video</a> |
+          <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Document</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="cv-skills-category">
+      <h3><em>Diseased Plant Detection</em></h3>
+      <ul>
+        <li>Created ResNet50, VGG16, and custom CNNs for new plant disease detection across 38 vision classes.</li>
+        <li><a href="https://drive.google.com/file/d/1xIN8EN7gbcpu1FSt5s0U76oeCbJRlQta/view?usp=sharing">Document</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="cv-section-card">
     <h2>Certifications & Awards</h2>
-    <ul>
-      <li><strong>Fundamentals of Accelerated Computing with CUDA C/C++</strong> (NVIDIA)</li>
-      <li><strong>Constellation Prize</strong> (Top 4/30+ teams), Ivy Data Visualization & Storytelling Case Competition, Ivy College of Business</li>
-      <li>
-        <strong>Winner, Applied AI Challenge 2025:</strong> <em>Karma AI – Social Impact Award</em> ($1500), for an AI solution empowering the visually impaired using multimodal prompting and GPT-based voice assistant<br>
-        <a href="https://github.com/rah757/KarmaAI">Code</a> | <a href="https://www.canva.com/design/DAGjaj5kX14/2f9-IAWV0LZ4p8TBO0g-Xw/view?utlId=hd404c7e05e#4">Demo</a>
-      </li>
-      <li><strong>2nd Place, Fall 2023 Coding Contest</strong>, CSE Programming Club</li>
-      <li><strong>100 Days of Code: The Complete Python Pro Bootcamp</strong> (In progress)</li>
-      <li><strong>Neural Radiance Fields & Implicit Neural Representations</strong> (Digital Badge, May 2025, TrAC, ISU)</li>
-      <li><strong>MLOps: Machine Learning in Practice</strong> (Digital Badge, Nov 2024, Translational AI Center, ISU)</li>
-    </ul>
+    <div class="cv-skills-category">
+      <h3><em>Certifications</em></h3>
+      <ul>
+        <li><strong>Fundamentals of Accelerated Computing with CUDA C/C++</strong> (NVIDIA)</li>
+        <li><strong>100 Days of Code: The Complete Python Pro Bootcamp</strong> (In progress)</li>
+        <li><strong>Neural Radiance Fields & Implicit Neural Representations</strong> (Digital Badge, May 2025, TrAC, ISU)</li>
+        <li><strong>MLOps: Machine Learning in Practice</strong> (Digital Badge, Nov 2024, Translational AI Center, ISU)</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="cv-skills-category">
+      <h3><em>Awards</em></h3>
+      <ul>
+        <li><strong>Constellation Prize</strong> (Top 4/30+ teams), Ivy Data Visualization & Storytelling Case Competition, Ivy College of Business</li>
+        <li>
+          <strong>Winner, Applied AI Challenge 2025:</strong> <em>Karma AI – Social Impact Award</em> ($1500), for an AI solution empowering the visually impaired using multimodal prompting and GPT-based voice assistant<br>
+          <a href="https://github.com/rah757/KarmaAI">Code</a> | <a href="https://www.canva.com/design/DAGjaj5kX14/2f9-IAWV0LZ4p8TBO0g-Xw/view?utlId=hd404c7e05e#4">Demo</a>
+        </li>
+        <li><strong>2nd Place, Fall 2023 Coding Contest</strong>, CSE Programming Club</li>
+      </ul>
+    </div>
   </div>
 </div>
 
