@@ -10,7 +10,7 @@ redirect_from:
 
 
 <!-- I am doing my Master's in Artificial Intelligence at Iowa State University along with my PhD in Computer Science. My research involves developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, focusing on novel capture setups with stationary cameras and rotating objects. I work with advanced segmentation techniques, self-supervised methods like NeRF-SOS, and attention-aware architectures for automatic object discovery and clean 3D reconstruction. -->
-yooo what's uppp!!
+learn something new everyday, trying to have fun in life :) 🚀
 
 
 ## Current Position
@@ -27,7 +27,7 @@ Jan 20, 2024	Excited to announce our NSF EAGER award on "LLM-Powered Framework f
 Dec 05, 2023	Our paper on "Neural PDE Solvers for Irregular Domains" accepted to Computer-Aided Design journal! -->
 Mar 15, 2025  Winner, Applied AI Challenge 2025: Karma AI – Social Impact Award  
 Feb 23, 2025  Constellation Prize, (Top 4/30+ teams), Ivy Data Visualization & Storytelling Case Competition, Ivy College of Business  
-Oct 15, 2023	Our team was a finalist in the NSF NAMRC Bluesky Manufacturing Competition for our work on "Conversational AI as a game-changer in manufacturing"!
+<!-- Oct 15, 2023	Our team was a finalist in the NSF NAMRC Bluesky Manufacturing Competition for our work on "Conversational AI as a game-changer in manufacturing"! -->
 <!-- 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! -->
 
