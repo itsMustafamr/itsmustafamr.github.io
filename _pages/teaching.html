@@ -7,6 +7,30 @@ author_profile: false
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="cv-main-container">
+  <div class="cv-section-card">
+    <h2>Teaching</h2>
+    {% for post in site.teaching reversed %}
+      <div class="cv-edu-item">
+        <span class="cv-edu-years">
+          {% if post.semesters %}
+            {{ post.semesters | join: ', ' }}
+          {% else %}
+            {{ post.date | date: '%B %Y' }}
+          {% endif %}
+        </span>
+        <div class="cv-edu-details">
+          <strong><a href="{{ post.permalink }}">{{ post.title }}</a></strong><br>
+          <span class="cv-edu-institution"><i class="fa fa-university"></i> {{ post.venue }}</span>
+          <ul>
+            {% if post.type %}<li>{{ post.type }}</li>{% endif %}
+            {% if post.location %}<li>{{ post.location }}</li>{% endif %}
+          </ul>
+          <div style="margin-top: 8px; color: var(--global-text-color-light);">
+            {{ post.content | markdownify }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

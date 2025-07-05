@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{% include base_path %}
+<div class="cv-main-container">
+  <div class="cv-section-card">
+    <h2>{{ page.title }}</h2>
+    <div class="cv-edu-item">
+      <span class="cv-edu-years">
+        {% if page.semesters %}
+          {{ page.semesters | join: ', ' }}
+        {% else %}
+          {{ page.date | date: '%B %Y' }}
+        {% endif %}
+      </span>
+      <div class="cv-edu-details">
+        <span class="cv-edu-institution"><i class="fa fa-university"></i> {{ page.venue }}</span>
+        <ul>
+          {% if page.type %}<li>{{ page.type }}</li>{% endif %}
+          {% if page.location %}<li>{{ page.location }}</li>{% endif %}
+        </ul>
+        <div style="margin-top: 8px; color: var(--global-text-color-light);">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    {% if page.ppts %}
+      <hr>
+      <h3>Course Slides</h3>
+      <ul>
+        {% for ppt in page.ppts %}
+          <li><a href="{{ ppt.url }}" target="_blank">{{ ppt.label }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if page.projects %}
+      <hr>
+      <h3>Student Projects</h3>
+      <ul>
+        {% for project in page.projects %}
+          <li><a href="{{ project.url }}" target="_blank">{{ project.label }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div> 

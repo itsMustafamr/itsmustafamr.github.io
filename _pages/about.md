@@ -10,7 +10,9 @@ redirect_from:
 
 
 <!-- I am doing my Master's in Artificial Intelligence at Iowa State University along with my PhD in Computer Science. My research involves developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, focusing on novel capture setups with stationary cameras and rotating objects. I work with advanced segmentation techniques, self-supervised methods like NeRF-SOS, and attention-aware architectures for automatic object discovery and clean 3D reconstruction. -->
-learn something new everyday, trying to have fun in life :) 🚀
+Hi! I'm Mustafa. I'm passionate about developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, working with advanced segmentation techniques and self-supervised methods.
+
+-> learn something new everyday, trying to have fun in life :) 🚀
 
 
 ## Current Position
