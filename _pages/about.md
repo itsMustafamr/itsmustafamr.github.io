@@ -12,8 +12,13 @@ redirect_from:
 <!-- I am doing my Master's in Artificial Intelligence at Iowa State University along with my PhD in Computer Science. My research involves developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, focusing on novel capture setups with stationary cameras and rotating objects. I work with advanced segmentation techniques, self-supervised methods like NeRF-SOS, and attention-aware architectures for automatic object discovery and clean 3D reconstruction. -->
 Hi! I'm Mustafa. I'm passionate about developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, working with advanced segmentation techniques and self-supervised methods.
 
+Hi! I’m Stuart, an Assistant Professor at the University of California, San Diego with appointments in the Department of Communication and the Halıcıoğlu Data Science Institute. I am also affiliate faculty in Computer Science & Engineering, Computational Social Science, and the Institute for Practical Ethics, where I lead IPE’s Working Group on Data Governance & Accountability.
+
+My work is on the social, cultural, political, and economic aspects of quantification, data science, automation, and AI. I have long focused on the role of AI in the governance and moderation of social media platforms and online communities, but I also care about issues like fairness, privacy, accountability, and labor in many application domains where AI is being deployed. Finally, I take the institutions of scientific and technological research as my object of study, asking how the disciplines and professions are changing around or by quantification, data science, automation, and AI.
+
 -> learn something new everyday, trying to have fun in life :) 🚀
 
+I am advised by Dr Adarsh krishnamurthy and Dr Aditya Balu.  In my free time, I work on Leetcode and programming skills.
 
 ## Current Position
 Research Assistant, lab of mechanics, Iowa State University  
