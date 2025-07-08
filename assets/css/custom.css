@@ -142,3 +142,54 @@ html[data-theme="dark"] .page__hero {
     background-color: var(--global-bg-color) !important;
     background-image: none !important;
 }
+
+/* Updates Block - works for both dark and light mode */
+.updates-block {
+  border-radius: 12px;
+  padding: 2em 2em 1.5em 2em;
+  margin: 2em 0;
+  font-size: 1.1em;
+  background: #23262a; /* Default for dark mode */
+  color: #f1f1f1;
+  border: 1px solid #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: 
+    background 0.3s, 
+    color 0.3s, 
+    box-shadow 0.3s, 
+    border 0.3s, 
+    transform 0.2s;
+}
+
+/* Light mode */
+body:not(.dark-mode) .updates-block {
+  background: #23262a !important;
+  color: #f1f1f1 !important;
+  border: 1px solid #444 !important;
+}
+
+/* Dark mode */
+body.dark-mode .updates-block {
+  background: #181a1b;
+  color: #f1f1f1;
+  border: 1px solid #333;
+}
+
+/* List styling inside updates block */
+.updates-block ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin: 0;
+}
+.updates-block li {
+  margin-bottom: 0.75em;
+  padding-left: 0.1em;
+  line-height: 1.6;
+}
+
+/* Hover effect for both modes */
+.updates-block:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  border-color: #4f8cff;
+  transform: translateY(-2px) scale(1.01);
+}
