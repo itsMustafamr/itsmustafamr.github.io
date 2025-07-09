@@ -106,6 +106,10 @@ redirect_from:
             <strong>TabPFN for Efficient Tabular Data Modeling</strong><br>
             Applied TabPFN, a transformer-based foundation model, to real-world tabular data tasks (e.g., classification, regression), achieving high accuracy with minimal preprocessing. Improved efficiency by optimizing inference speed, enabling scalable deployment in time-sensitive applications.
           </li>
+          <li>
+            <strong>Slice 100k work</strong><br>
+            To generate cad designs from code prompts
+          </li>
         </ul>
       </div>
     </div>
