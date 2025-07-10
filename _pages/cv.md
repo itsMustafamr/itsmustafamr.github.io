@@ -194,7 +194,8 @@ redirect_from:
       <h3><em>Certifications</em></h3>
       <ul>
         <li><strong>Fundamentals of Accelerated Computing with CUDA C/C++</strong> (NVIDIA)</li>
-        <li><strong>100 Days of Code: The Complete Python Pro Bootcamp</strong> (In progress)</li>
+        <li><strong>Complete Python With DSA Bootcamp by Krish Naik, Udemy</strong> (In progress)</li>
+        <li><strong>Complete Machine Learning, NLP Bootcamp with MLOps and Deployment by Krish Naik, Udemy</strong> (In progress)</li>
         <li><strong>Neural Radiance Fields & Implicit Neural Representations</strong> (Digital Badge, May 2025, TrAC, ISU)</li>
         <li><strong>MLOps: Machine Learning in Practice</strong> (Digital Badge, Nov 2024, Translational AI Center, ISU)</li>
       </ul>
