@@ -20,15 +20,4 @@ main:
   - title: "Publications"
     url: /publications/
 
-
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+# Removed Portfolio, Blog Posts, and Guide from navigation
