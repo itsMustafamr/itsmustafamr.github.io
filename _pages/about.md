@@ -9,22 +9,16 @@ redirect_from:
 ---
 
 
+Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. My research focuses on developing innovative approaches to Neural Radiance Fields (NeRF) for high-quality 3D scene reconstruction, emphasizing advanced segmentation techniques and self-supervised learning methods.
+
+I’m passionate about exploring the intersections of computer vision, machine learning, and 3D reconstruction to push the boundaries of what's possible in visual computing. Beyond research, I actively enhance my coding and problem-solving skills through LeetCode and various programming challenges.
+
+I believe in continuously learning something new every day, balancing hard work with fun and creativity along the way. 🚀
 <!-- I am doing my Master's in Artificial Intelligence at Iowa State University along with my PhD in Computer Science. My research involves developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, focusing on novel capture setups with stationary cameras and rotating objects. I work with advanced segmentation techniques, self-supervised methods like NeRF-SOS, and attention-aware architectures for automatic object discovery and clean 3D reconstruction. -->
-Hi! I'm Mustafa. I'm passionate about developing innovative approaches to Neural Radiance Fields (NeRF) for 3D scene reconstruction, working with advanced segmentation techniques and self-supervised methods.
 
-I am a Ph.D. candidate in Computer Science at Iowa State University, working as a Research Assistant at the AI Institute for Resilient Agriculture (AIIRA). Currently, I am a Graduate Software Engineering Intern at Intel, applying Computer Vision and Large Language Models to UI automation, graphics validation, and hardware enablement. My work interests lie at the intersection of Large Language Models, Computer Vision, and MLOps.
-
-
-Hi! I’m Stuart, an Assistant Professor at the University of California, San Diego with appointments in the Department of Communication and the Halıcıoğlu Data Science Institute. I am also affiliate faculty in Computer Science & Engineering, Computational Social Science, and the Institute for Practical Ethics, where I lead IPE’s Working Group on Data Governance & Accountability.
-
-My work is on the social, cultural, political, and economic aspects of quantification, data science, automation, and AI. I have long focused on the role of AI in the governance and moderation of social media platforms and online communities, but I also care about issues like fairness, privacy, accountability, and labor in many application domains where AI is being deployed. Finally, I take the institutions of scientific and technological research as my object of study, asking how the disciplines and professions are changing around or by quantification, data science, automation, and AI.
-
--> learn something new everyday, trying to have fun in life :) 🚀
-
-I am advised by Dr Adarsh krishnamurthy and Dr Aditya Balu.  In my free time, I work on Leetcode and programming skills.
 
 ## Current Position
-Research Assistant, lab of mechanics, Iowa State University  
+Research Assistant, lab of mechanics, Iowa State University
 <!-- ## Education
 Master of Science in Artificial Intelligence, Iowa State University, 2023 - Present  
 Bachelor of Science in Electrical and Electronics Engineering, APJ Abdul Kalam Technological University, Kerala, India, 2018 - 2022
