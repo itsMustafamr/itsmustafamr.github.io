@@ -1,7 +1,7 @@
 ---
 permalink: /
 #title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
-title: "About Me... "
+#title: "About Me... "
 author_profile: false
 redirect_from: 
   - /about/
@@ -14,7 +14,7 @@ redirect_from:
       <h1>{{ site.author.name }}</h1>
       {% if site.author.pronouns %}<p class="author__pronouns">{{ site.author.pronouns }}</p>{% endif %}
       {% if site.author.bio %}<p class="author__bio">{{ site.author.bio }}</p>{% endif %}
-      
+      <h2 class="about-heading">About me....</h2>
       <p>Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. My research focuses on developing innovative approaches to Neural Radiance Fields (NeRF) for high-quality 3D scene reconstruction, emphasizing advanced segmentation techniques and self-supervised learning methods.</p>
 
       <p>I'm passionate about exploring the intersections of computer vision, machine learning, and 3D reconstruction to push the boundaries of what's possible in visual computing. Beyond research, I actively enhance my coding and problem-solving skills through LeetCode and various programming challenges.</p>
@@ -198,6 +198,12 @@ redirect_from:
 .updates-block li {
   margin-bottom: 10px;
   line-height: 1.5;
+}
+
+.about-heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
 }
 
 /* Responsive design */

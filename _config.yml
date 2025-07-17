@@ -25,7 +25,7 @@ author:
   avatar           : "Profile_2.jpg"
   name             : "Mohammed Musthafa Rafi"
   pronouns         : "he/him"  
-  bio              : "PhD student in Computer Science and Master's student in Artificial Intelligence at Iowa State University."
+  #bio              : "PhD student in Computer Science and Master's student in Artificial Intelligence at Iowa State University."
   location         : "Ames, Iowa"
   employer         : "Iowa State University"
   uri              : # URL
