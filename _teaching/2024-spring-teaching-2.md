@@ -23,7 +23,7 @@ projects:
     url: "https://github.com/example/task-tracker"
 ---
 
-Taught COM S 309, focusing on major software engineering topics and preparing students to lead medium-sized software projects. Emphasized teamwork, accountability, project management, and professional ethics through a semester-long group project.
+TA for COM S 309, focusing on major software engineering topics and preparing students to lead medium-sized software projects. Emphasized teamwork, accountability, project management, and professional ethics through a semester-long group project.
 
 **Key topics/goals:**
 - Software development lifecycle: requirements, design, implementation
