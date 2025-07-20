@@ -342,7 +342,7 @@ author_profile: false
 
   .month-labels {
     display: flex;
-    gap: 2px; /* Reduced gap for tighter spacing */
+    gap: 4px; /* Match the calendar gap */
     margin-bottom: 8px;
     padding-left: 20px; /* Space for day labels */
     align-items: flex-end;
@@ -611,7 +611,7 @@ function updateContributionCalendar(contributions) {
   let lastWeekIndex = 0;
   
   monthLabels.forEach(({ month, weekIndex }) => {
-    const spacing = (weekIndex - lastWeekIndex) * 12; // Tighter spacing for month labels
+    const spacing = (weekIndex - lastWeekIndex) * 10; // Moderate spacing
     monthLabelsHTML += `
       <div class="month-label-container" style="margin-left: ${spacing}px;">
         <div class="month-label">${month}</div>
@@ -620,20 +620,24 @@ function updateContributionCalendar(contributions) {
     lastWeekIndex = weekIndex;
   });
   
-  // Check if we need to add the final July
+  // Ensure we have the final July label if the data ends in July
   const lastWeek = contributions.weeks[contributions.weeks.length - 1];
   const lastWeekDate = new Date(lastWeek.contributionDays[lastWeek.contributionDays.length - 1].date);
   const lastMonth = lastWeekDate.getMonth();
   
   // If the last month is July and we don't already have a July label at the end, add it
   if (lastMonth === 6 && monthLabels[monthLabels.length - 1].month !== 'Jul') {
-    const finalSpacing = (contributions.weeks.length - 1 - lastWeekIndex) * 12;
+    const finalSpacing = (contributions.weeks.length - 1 - lastWeekIndex) * 10;
     monthLabelsHTML += `
       <div class="month-label-container" style="margin-left: ${finalSpacing}px;">
         <div class="month-label">Jul</div>
       </div>
     `;
   }
+  
+  // Debug: Log the month labels to see what we're generating
+  console.log('Generated month labels:', monthLabels.map(m => m.month));
+  console.log('Last month in data:', lastMonth, 'Last month name:', months[lastMonth]);
   
   monthLabelsContainer.innerHTML = monthLabelsHTML;
 
