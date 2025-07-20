@@ -646,7 +646,14 @@ function updateContributionCalendar(contributions) {
     <div class="calendar-week">
       ${week.contributionDays.map((day, dayIdx) => {
         const level = getContributionLevelDynamic(day.contributionCount, minCount, maxCount);
-        const date = new Date(day.date);
+        // GitHub API uses 0=Sunday, 1=Monday, etc., but we need to parse the date correctly
+        // The date string is in YYYY-MM-DD format, so we need to ensure it's treated as UTC
+        // Add +1 day to fix the date offset issue
+        const dateParts = day.date.split('-');
+        const year = parseInt(dateParts[0]);
+        const month = parseInt(dateParts[1]) - 1; // JavaScript months are 0-indexed
+        const dayOfMonth = parseInt(dateParts[2]) + 1; // Add +1 day to fix the offset
+        const date = new Date(Date.UTC(year, month, dayOfMonth));
         const formattedDate = date.toLocaleDateString('en-US', {
           weekday: 'long',
           year: 'numeric',

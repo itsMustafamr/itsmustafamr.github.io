@@ -589,6 +589,8 @@ def generate_stats_json(username, output_file='assets/data/github_stats.json'):
             'weeks': []
         }
     
+    # (Removed last week padding code)
+    
     # Calculate statistics
     total_stars = sum(repo['stargazers_count'] for repo in repos_data)
     total_forks = sum(repo['forks_count'] for repo in repos_data)
