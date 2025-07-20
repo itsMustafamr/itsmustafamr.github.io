@@ -1,0 +1,776 @@
+---
+layout: archive
+title: "Repositories"
+permalink: /repositories/
+author_profile: false
+---
+
+{% include base_path %}
+
+<div class="repositories-container">
+  <!-- GitHub Stats Section -->
+  <div class="github-stats-section">
+    <h2>GitHub Statistics</h2>
+    <div class="stats-grid">
+      <div class="stats-card">
+        <div class="stats-content">
+          <div class="stats-list">
+            <div class="stat-item">
+              <span class="stat-label">Total Stars Earned:</span>
+              <span class="stat-value" id="total-stars">-</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Total Commits (<span id="current-year">2025</span>):</span>
+              <span class="stat-value" id="total-commits">-</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Total PRs:</span>
+              <span class="stat-value" id="total-prs">-</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Total Issues:</span>
+              <span class="stat-value" id="total-issues">-</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Contributed to (last year):</span>
+              <span class="stat-value" id="contributed-repos">-</span>
+            </div>
+          </div>
+          <div class="grade-circle">
+            <div class="grade" id="github-grade">-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contribution Calendar Section -->
+  <div class="contributions-section">
+    <h2>Contribution Calendar</h2>
+    <div class="contribution-container">
+      <div class="contribution-header">
+        <div class="contribution-stats">
+          <span id="total-contributions">-</span> contributions in the last year
+        </div>
+      </div>
+
+      <div class="contribution-calendar-container">
+        <div class="calendar-layout">
+          <div class="month-labels" id="month-labels">
+            <!-- Month labels will be generated here -->
+          </div>
+          <div class="calendar-with-labels">
+            <div class="day-labels">
+              <div class="day-label">Mon</div>
+              <div class="day-label"></div>
+              <div class="day-label">Wed</div>
+              <div class="day-label"></div>
+              <div class="day-label">Fri</div>
+              <div class="day-label"></div>
+              <div class="day-label"></div>
+            </div>
+            <div class="contribution-calendar" id="contribution-calendar">
+              <!-- Contribution calendar will be generated here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contribution-footer">
+        <div class="contribution-legend">
+          <span>Less</span>
+          <div class="legend-squares">
+            <div class="legend-square level-0"></div>
+            <div class="legend-square level-1"></div>
+            <div class="legend-square level-2"></div>
+            <div class="legend-square level-3"></div>
+            <div class="legend-square level-4"></div>
+          </div>
+          <span>More</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievement Badges Section -->
+  <div class="achievements-section">
+    <h2>Achievements</h2>
+    <div class="badges-grid">
+      <!-- Achievement badges will be loaded here via JavaScript -->
+    </div>
+  </div>
+
+</div>
+
+<style>
+.repositories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.github-stats-section,
+.achievements-section,
+.featured-repos-section {
+  margin-bottom: 40px;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.stats-card {
+  background: #2d3748;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 400px;
+}
+
+.stats-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.stats-list {
+  flex: 1;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #4a5568;
+}
+
+.stat-label {
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.stat-value {
+  color: #f7fafc;
+  font-weight: bold;
+}
+
+.grade-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.grade {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+  .badge-card {
+    background: #2d3748;
+    border: 1px solid #4a5568;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .badge-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: #718096;
+  }
+
+.badge-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+  .badge-title {
+    font-weight: bold;
+    color: #f7fafc;
+    margin-bottom: 5px;
+  }
+
+  .badge-subtitle {
+    color: #e2e8f0;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .badge-points {
+    color: #a0aec0;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+.repos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.repo-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.repo-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.repo-icon {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  color: #4a5568;
+}
+
+.repo-name {
+  font-weight: bold;
+  color: #2d3748;
+  text-decoration: none;
+}
+
+.repo-name:hover {
+  color: #3182ce;
+}
+
+.repo-description {
+  color: #718096;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.repo-stats {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.repo-stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: #718096;
+  }
+
+  /* Contribution Calendar Styles */
+  .contributions-section {
+    margin-bottom: 40px;
+  }
+
+  .contribution-container {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contribution-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .contribution-stats {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f0f6fc;
+  }
+
+
+
+  .year-selector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .current-year {
+    font-size: 0.8rem;
+    color: #7d8590;
+    padding: 4px 8px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+  }
+
+  .contribution-calendar-container {
+    margin-bottom: 20px;
+  }
+
+  .calendar-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .month-labels {
+    display: flex;
+    gap: 2px; /* Reduced gap for tighter spacing */
+    margin-bottom: 8px;
+    padding-left: 20px; /* Space for day labels */
+    align-items: flex-end;
+  }
+
+  .month-label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 10px; /* Reduced from 12 to 10 */
+    flex-shrink: 0;
+  }
+
+  .month-label {
+    font-size: 0.8rem;
+    color: #7d8590;
+    text-align: center;
+  }
+
+  .year-label {
+    font-size: 0.6rem;
+    color: #7d8590;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+
+  .calendar-with-labels {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .day-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-right: 8px;
+    padding-top: 4px;
+  }
+
+  .day-label {
+    height: 12px;
+    font-size: 0.7rem;
+    color: #7d8590;
+    display: flex;
+    align-items: center;
+  }
+
+  .contribution-calendar {
+    display: flex;
+    flex-direction: row;
+    gap: 4px; /* Back to original spacing */
+    align-items: flex-start;
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .calendar-week {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Back to original spacing */
+    flex-shrink: 0;
+  }
+
+  .calendar-day {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: #ebedf0;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .calendar-day.level-0 { background: #161b22; }
+  .calendar-day.level-1 { background: #0e4429; }
+  .calendar-day.level-2 { background: #006d32; }
+  .calendar-day.level-3 { background: #26a641; }
+  .calendar-day.level-4 { background: #39d353; }
+
+  .calendar-day:hover {
+    border: 1px solid #000;
+  }
+
+  .calendar-day.has-tooltip {
+    cursor: pointer;
+  }
+
+  .day-tooltip {
+    position: fixed;
+    background: #000;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .day-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-top-color: #000;
+  }
+
+  .calendar-day:hover .day-tooltip {
+    opacity: 1;
+  }
+
+  .contribution-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #7d8590;
+  }
+
+  .contribution-legend {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .legend-squares {
+    display: flex;
+    gap: 2px;
+  }
+
+  .legend-square {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+
+  .legend-square.level-0 { background: #161b22; }
+  .legend-square.level-1 { background: #0e4429; }
+  .legend-square.level-2 { background: #006d32; }
+  .legend-square.level-3 { background: #26a641; }
+  .legend-square.level-4 { background: #39d353; }
+
+
+
+  @media (max-width: 768px) {
+  .stats-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .stats-card {
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .badges-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .repos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<script>
+// Load GitHub statistics from JSON file
+async function loadGitHubStats() {
+  try {
+    const response = await fetch('/assets/data/github_stats.json');
+    if (!response.ok) {
+      throw new Error('Failed to load GitHub statistics');
+    }
+    
+    const data = await response.json();
+    updateStats(data.statistics);
+    updateAchievements(data.achievements);
+    updateContributionCalendar(data.contributions);
+    
+  } catch (error) {
+    console.error('Error loading GitHub statistics:', error);
+    showError();
+  }
+}
+
+function updateStats(statistics) {
+  document.getElementById('total-stars').textContent = statistics.total_stars;
+  document.getElementById('total-commits').textContent = statistics.total_commits;
+  document.getElementById('total-prs').textContent = statistics.total_prs;
+  document.getElementById('total-issues').textContent = statistics.total_issues;
+  document.getElementById('contributed-repos').textContent = statistics.contributed_repos;
+  document.getElementById('github-grade').textContent = statistics.grade;
+}
+
+function updateAchievements(achievements) {
+  const badgesContainer = document.querySelector('.badges-grid');
+  
+  const badgesHTML = Object.values(achievements).map(achievement => `
+    <div class="badge-card">
+      <div class="badge-icon">🏆</div>
+      <div class="badge-title">${achievement.title}</div>
+      <div class="badge-subtitle">${achievement.subtitle}</div>
+      <div class="badge-points">${achievement.points}pt</div>
+    </div>
+  `).join('');
+  
+  badgesContainer.innerHTML = badgesHTML;
+}
+
+function updateContributionCalendar(contributions) {
+  // Update total contributions
+  const totalContributions = contributions.totalContributions || 0;
+  document.getElementById('total-contributions').textContent = totalContributions;
+
+  // Prepare data for color mapping
+  let allCounts = [];
+  contributions.weeks.forEach(week => {
+    week.contributionDays.forEach(day => {
+      allCounts.push(day.contributionCount);
+    });
+  });
+  const minCount = Math.min(...allCounts.filter(x => x > 0));
+  const maxCount = Math.max(...allCounts);
+
+  // Generate month labels
+  const monthLabelsContainer = document.getElementById('month-labels');
+  const calendarContainer = document.getElementById('contribution-calendar');
+
+  if (!contributions.weeks || contributions.weeks.length === 0) {
+    calendarContainer.innerHTML = '<div class="loading">Contribution data not available</div>';
+    return;
+  }
+
+  // Generate month labels with proper positioning
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const monthLabels = [];
+  let currentMonth = -1;
+  let currentYear = null;
+
+  contributions.weeks.forEach((week, weekIndex) => {
+    const firstDay = new Date(week.contributionDays[0].date);
+    const month = firstDay.getMonth();
+    const year = firstDay.getFullYear();
+    
+    // Check for month change (including year change for July)
+    if (month !== currentMonth || year !== currentYear) {
+      currentMonth = month;
+      currentYear = year;
+      monthLabels.push({
+        month: months[month],
+        weekIndex: weekIndex
+      });
+    }
+  });
+
+  // Create month labels with proper spacing
+  let monthLabelsHTML = '';
+  let lastWeekIndex = 0;
+  
+  monthLabels.forEach(({ month, weekIndex }) => {
+    const spacing = (weekIndex - lastWeekIndex) * 12; // Tighter spacing for month labels
+    monthLabelsHTML += `
+      <div class="month-label-container" style="margin-left: ${spacing}px;">
+        <div class="month-label">${month}</div>
+      </div>
+    `;
+    lastWeekIndex = weekIndex;
+  });
+  
+  // Check if we need to add the final July
+  const lastWeek = contributions.weeks[contributions.weeks.length - 1];
+  const lastWeekDate = new Date(lastWeek.contributionDays[lastWeek.contributionDays.length - 1].date);
+  const lastMonth = lastWeekDate.getMonth();
+  
+  // If the last month is July and we don't already have a July label at the end, add it
+  if (lastMonth === 6 && monthLabels[monthLabels.length - 1].month !== 'Jul') {
+    const finalSpacing = (contributions.weeks.length - 1 - lastWeekIndex) * 12;
+    monthLabelsHTML += `
+      <div class="month-label-container" style="margin-left: ${finalSpacing}px;">
+        <div class="month-label">Jul</div>
+      </div>
+    `;
+  }
+  
+  monthLabelsContainer.innerHTML = monthLabelsHTML;
+
+  // Generate calendar (rightmost column is current week)
+  const calendarHTML = contributions.weeks.map((week, weekIdx) => `
+    <div class="calendar-week">
+      ${week.contributionDays.map((day, dayIdx) => {
+        const level = getContributionLevelDynamic(day.contributionCount, minCount, maxCount);
+        const date = new Date(day.date);
+        const formattedDate = date.toLocaleDateString('en-US', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+        return `
+          <div class="calendar-day level-${level} ${day.contributionCount > 0 ? 'has-tooltip' : ''}"
+               data-contributions="${day.contributionCount}"
+               onmouseenter="showTooltip(event, '${day.contributionCount} contribution${day.contributionCount !== 1 ? 's' : ''} on ${formattedDate}')"
+               onmouseleave="hideTooltip()">
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `).join('');
+  calendarContainer.innerHTML = calendarHTML;
+  setupYearSelector();
+}
+
+// Dynamic color mapping based on min/max for the year
+function getContributionLevelDynamic(count, min, max) {
+  if (count === 0) return 0;
+  if (max === min) return 4; // All nonzero are max
+  const thresholds = [
+    min,
+    min + (max - min) * 0.25,
+    min + (max - min) * 0.5,
+    min + (max - min) * 0.75,
+    max + 1
+  ];
+  if (count < thresholds[1]) return 1;
+  if (count < thresholds[2]) return 2;
+  if (count < thresholds[3]) return 3;
+  return 4;
+}
+
+// Tooltip logic with position: fixed and high z-index
+function showTooltip(e, text) {
+  let tooltip = document.getElementById('calendar-tooltip');
+  if (!tooltip) {
+    tooltip = document.createElement('div');
+    tooltip.id = 'calendar-tooltip';
+    tooltip.style.position = 'fixed';
+    tooltip.style.zIndex = '9999';
+    tooltip.style.background = '#000';
+    tooltip.style.color = '#fff';
+    tooltip.style.padding = '8px 12px';
+    tooltip.style.borderRadius = '6px';
+    tooltip.style.fontSize = '0.8rem';
+    tooltip.style.pointerEvents = 'none';
+    tooltip.style.whiteSpace = 'nowrap';
+    tooltip.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
+    tooltip.style.transition = 'opacity 0.2s';
+    document.body.appendChild(tooltip);
+  }
+  tooltip.textContent = text;
+  tooltip.style.opacity = '1';
+  
+  // Position tooltip above the day square
+  const rect = e.target.getBoundingClientRect();
+  const tooltipWidth = tooltip.offsetWidth || 200;
+  const tooltipHeight = tooltip.offsetHeight || 40;
+  
+  let x = rect.left + rect.width / 2 - tooltipWidth / 2;
+  let y = rect.top - tooltipHeight - 8;
+  
+  // Ensure tooltip doesn't go off screen
+  if (x < 10) x = 10;
+  if (x + tooltipWidth > window.innerWidth - 10) {
+    x = window.innerWidth - tooltipWidth - 10;
+  }
+  if (y < 10) {
+    // If tooltip would go above screen, show it below
+    y = rect.bottom + 8;
+  }
+  
+  tooltip.style.left = x + 'px';
+  tooltip.style.top = y + 'px';
+}
+function hideTooltip() {
+  const tooltip = document.getElementById('calendar-tooltip');
+  if (tooltip) tooltip.style.opacity = 0;
+}
+
+function setupYearSelector() {
+  const yearButtons = document.querySelectorAll('.year-btn');
+  
+  yearButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Remove active class from all buttons
+      yearButtons.forEach(btn => btn.classList.remove('active'));
+      // Add active class to clicked button
+      this.classList.add('active');
+      
+      // Here you could load data for the selected year
+      // For now, we'll just update the display
+      const selectedYear = this.getAttribute('data-year');
+      console.log(`Selected year: ${selectedYear}`);
+    });
+  });
+}
+
+function getContributionLevel(count) {
+  if (count === 0) return 0;
+  if (count <= 3) return 1;
+  if (count <= 6) return 2;
+  if (count <= 9) return 3;
+  return 4;
+}
+
+
+
+function showError() {
+  document.getElementById('featured-repos').innerHTML = 
+    '<div class="loading">Unable to load repositories. Please run the update script to generate statistics.</div>';
+}
+
+// Load data when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  // Set current year
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+  
+  loadGitHubStats();
+  
+  // Auto-refresh data every 5 minutes to keep it up-to-date
+  setInterval(function() {
+    loadGitHubStats();
+  }, 5 * 60 * 1000); // 5 minutes
+});
+</script> 
