@@ -321,7 +321,7 @@ def fetch_real_contributions(username, token=None):
         
         # Also fetch pull requests and issues for more accurate counting
         # Fetch user's pull requests
-        prs_url = f'https://api.github.com/search/issues?q=author:{username}+type:pr+created:{start_date.strftime('%Y-%m-%d')}..{end_date.strftime('%Y-%m-%d')}'
+        prs_url = f"https://api.github.com/search/issues?q=author:{username}+type:pr+created:{start_date.strftime('%Y-%m-%d')}..{end_date.strftime('%Y-%m-%d')}"
         prs_response = requests.get(prs_url, headers=headers)
         
         if prs_response.status_code == 200:
@@ -337,7 +337,7 @@ def fetch_real_contributions(username, token=None):
                     contributions_by_date[pr_date_str] = 1
         
         # Fetch user's issues
-        issues_url = f'https://api.github.com/search/issues?q=author:{username}+type:issue+created:{start_date.strftime('%Y-%m-%d')}..{end_date.strftime('%Y-%m-%d')}'
+        issues_url = f"https://api.github.com/search/issues?q=author:{username}+type:issue+created:{start_date.strftime('%Y-%m-%d')}..{end_date.strftime('%Y-%m-%d')}"
         issues_response = requests.get(issues_url, headers=headers)
         
         if issues_response.status_code == 200:
