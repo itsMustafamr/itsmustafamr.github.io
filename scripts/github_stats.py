@@ -108,59 +108,9 @@ def fetch_contributions(username, token=None):
     if token:
         headers['Authorization'] = f'bearer {token}'
     
-    # GraphQL query to get contribution data for exactly 52 weeks ending today
-    # Calculate date range dynamically to match GitHub's 52-week display
+    # Set date range: exactly 1 year ending today (inclusive)
     end_date = datetime.now()
-    
-    # Calculate start date to ensure exactly 52 weeks
-    # But we want to ensure it spans from July to July for a full year view
-    start_date = end_date - timedelta(weeks=52)
-    
-    # Ensure we start from the beginning of the week (Monday)
-    # GitHub's contribution graph starts weeks on Monday
-    days_since_monday = start_date.weekday()
-    if days_since_monday != 0:  # If not Monday
-        start_date = start_date - timedelta(days=days_since_monday)
-    
-    # Ensure the end date includes the current week properly
-    # If today is not Sunday, we need to extend to the end of the current week
-    days_until_sunday = (6 - end_date.weekday()) % 7
-    if days_until_sunday > 0:
-        end_date = end_date + timedelta(days=days_until_sunday)
-    
-    # For a proper July-to-July view, we need to ensure we have the full year
-    # GitHub's contribution graph should show exactly 52 weeks
-    # Let's verify we have the correct number of weeks
-    total_weeks = (end_date - start_date).days // 7
-    if total_weeks != 52:
-        # Adjust to ensure exactly 52 weeks
-        if total_weeks < 52:
-            end_date = start_date + timedelta(weeks=52)
-        else:
-            end_date = start_date + timedelta(weeks=52)
-    
-    # Ensure we have a proper July-to-July span
-    # Always start from the first Monday in July of the start year
-    july_start = datetime(start_date.year, 7, 1)
-    days_to_monday = (0 - july_start.weekday()) % 7  # Monday is 0
-    start_date = july_start + timedelta(days=days_to_monday)
-    
-    # Calculate end date to ensure we include today
-    # We want exactly 52 weeks, but we need to make sure we include the current date
-    end_date = start_date + timedelta(weeks=52)
-    
-    # Ensure we include today's date
-    today = datetime.now()
-    if end_date < today:
-        # For GraphQL, we need to stay within 1 year limit
-        # Calculate the exact date range that includes today
-        end_date = today
-        start_date = end_date - timedelta(days=364)  # 364 days to stay within 1 year
-        
-        # Ensure we start from a Monday for proper week alignment
-        days_since_monday = start_date.weekday()
-        if days_since_monday != 0:  # If not Monday
-            start_date = start_date - timedelta(days=days_since_monday)
+    start_date = end_date - timedelta(days=364)
     
     query = """
     query($username: String!, $fromDate: DateTime!, $toDate: DateTime!) {
@@ -216,35 +166,9 @@ def fetch_real_contributions(username, token=None):
     if token:
         headers['Authorization'] = f'token {token}'
     
-    # Calculate date range for exactly 52 weeks ending today
+    # Set date range: exactly 1 year ending today (inclusive)
     end_date = datetime.now()
-    start_date = end_date - timedelta(weeks=52)
-    
-    # Ensure we start from the beginning of a week (Monday)
-    days_since_monday = start_date.weekday()
-    if days_since_monday != 0:  # If not Monday
-        start_date = start_date - timedelta(days=days_since_monday)
-    
-    # Ensure the end date includes the current week properly
-    days_until_sunday = (6 - end_date.weekday()) % 7
-    if days_until_sunday > 0:
-        end_date = end_date + timedelta(days=days_until_sunday)
-    
-    # Ensure we have a proper July-to-July span
-    # Always start from the first Monday in July of the start year
-    july_start = datetime(start_date.year, 7, 1)
-    days_to_monday = (0 - july_start.weekday()) % 7  # Monday is 0
-    start_date = july_start + timedelta(days=days_to_monday)
-    
-    # Calculate end date to ensure we include today
-    # We want exactly 52 weeks, but we need to make sure we include the current date
-    end_date = start_date + timedelta(weeks=52)
-    
-    # Ensure we include today's date
-    today = datetime.now()
-    if end_date < today:
-        # Extend the end date to include today
-        end_date = today + timedelta(days=6)  # Extend to end of current week
+    start_date = end_date - timedelta(days=364)
     
     print(f"Fetching real contributions from {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}")
     
@@ -391,47 +315,9 @@ def fetch_real_contributions(username, token=None):
 
 def get_contribution_fallback(username):
     """Fallback method to get contributions from GitHub's contribution graph."""
-    # Try to fetch real data from GitHub's contribution graph
-    # This is a more reliable method when GraphQL is not available
-    
-    # Calculate exactly 52 weeks ending today (GitHub shows exactly 52 weeks)
+    # Set date range: exactly 1 year ending today (inclusive)
     end_date = datetime.now()
-    
-    # GitHub's contribution graph shows exactly 52 weeks ending on the current date
-    # We need to calculate 52 weeks back from today to get the full year
-    # But we want to ensure it spans from July to July for a full year view
-    start_date = end_date - timedelta(weeks=52)
-    
-    # Ensure we start from the beginning of a week (Monday)
-    # GitHub's contribution graph starts weeks on Monday
-    days_since_monday = start_date.weekday()
-    if days_since_monday != 0:  # If not Monday
-        start_date = start_date - timedelta(days=days_since_monday)
-    
-    # Ensure the end date includes the current week properly
-    # If today is not Sunday, we need to extend to the end of the current week
-    days_until_sunday = (6 - end_date.weekday()) % 7
-    if days_until_sunday > 0:
-        end_date = end_date + timedelta(days=days_until_sunday)
-    
-    # For a proper July-to-July view, we need to ensure we have the full year
-    # GitHub's contribution graph should show exactly 52 weeks
-    # Let's verify we have the correct number of weeks
-    total_weeks = (end_date - start_date).days // 7
-    if total_weeks != 52:
-        # Adjust to ensure exactly 52 weeks
-        if total_weeks < 52:
-            end_date = start_date + timedelta(weeks=52)
-        else:
-            end_date = start_date + timedelta(weeks=52)
-    
-    # Ensure we have a proper July-to-July span
-    # Always start from the first Monday in July of the start year
-    july_start = datetime(start_date.year, 7, 1)
-    days_to_monday = (0 - july_start.weekday()) % 7  # Monday is 0
-    start_date = july_start + timedelta(days=days_to_monday)
-    # Recalculate end date to maintain 52 weeks
-    end_date = start_date + timedelta(weeks=52)
+    start_date = end_date - timedelta(days=364)
     
     print(f"Date range: {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}")
     print(f"Today: {datetime.now().strftime('%Y-%m-%d')}")
