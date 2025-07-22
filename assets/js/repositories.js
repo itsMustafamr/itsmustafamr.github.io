@@ -1,4 +1,6 @@
-// Load GitHub statistics from JSON file and render statistics, achievements, and contribution calendar
+// GitHub statistics page script extracted from _pages/repositories.html to avoid inline-script CSP issues.
+// -------------------------------------------------------------
+// Load GitHub statistics from JSON file
 async function loadGitHubStats() {
   try {
     const response = await fetch('/assets/data/github_stats.json?' + new Date().getTime()); // Cache busting
@@ -37,4 +39,82 @@ function updateAchievements(achievements) {
   badgesContainer.innerHTML = badgesHTML;
 }
 
-// ... existing long script (functions updateContributionCalendar, tooltip helpers, initGitHubStats, etc.) ... 
+function updateContributionCalendar(contributions) {
+  const totalContributions = contributions.totalContributions || 0;
+  document.getElementById('total-contributions').textContent = totalContributions;
+
+  let allCounts = [];
+  contributions.weeks.forEach(week => {
+    week.contributionDays.forEach(day => allCounts.push(day.contributionCount));
+  });
+  const minCount = Math.min(...allCounts.filter(x => x > 0));
+  const maxCount = Math.max(...allCounts);
+
+  const monthLabelsContainer = document.getElementById('month-labels');
+  const calendarContainer = document.getElementById('contribution-calendar');
+  if (!contributions.weeks || contributions.weeks.length === 0) {
+    calendarContainer.innerHTML = '<div class="loading">Contribution data not available</div>';
+    return;
+  }
+
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const monthLabels = [];
+  let currentMonth = -1;
+  let currentYear  = null;
+  contributions.weeks.forEach((week, idx) => {
+    const d = new Date(week.contributionDays[0].date);
+    const m = d.getMonth();
+    const y = d.getFullYear();
+    if (m !== currentMonth || y !== currentYear) {
+      currentMonth = m; currentYear = y;
+      monthLabels.push({ month: months[m], weekIndex: idx });
+    }
+  });
+
+  let mlHTML = '';
+  let lastIdx = 0;
+  monthLabels.forEach(({month,weekIndex}) => {
+    const spacing = (weekIndex - lastIdx) * 10;
+    mlHTML += `<div class="month-label-container" style="margin-left:${spacing}px;"><div class="month-label">${month}</div></div>`;
+    lastIdx = weekIndex;
+  });
+  monthLabelsContainer.innerHTML = mlHTML;
+
+  const calHTML = contributions.weeks.map(week => `
+    <div class="calendar-week">
+      ${week.contributionDays.map(day => {
+        const level = getContributionLevelDynamic(day.contributionCount, minCount, maxCount);
+        return `<div class="calendar-day level-${level}"></div>`;
+      }).join('')}
+    </div>`).join('');
+  calendarContainer.innerHTML = calHTML;
+}
+
+function getContributionLevelDynamic(count, min, max) {
+  if (count === 0) return 0;
+  if (max === min) return 4;
+  const t1 = min + (max-min)*0.25;
+  const t2 = min + (max-min)*0.5;
+  const t3 = min + (max-min)*0.75;
+  if (count < t1) return 1;
+  if (count < t2) return 2;
+  if (count < t3) return 3;
+  return 4;
+}
+
+function showError() {
+  const el = document.getElementById('featured-repos');
+  if (el) el.innerHTML = '<div class="loading">Unable to load repositories.</div>';
+}
+
+function initGitHubStats() {
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+  loadGitHubStats();
+  setInterval(loadGitHubStats, 2*60*1000);
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initGitHubStats);
+} else {
+  initGitHubStats();
+} 
