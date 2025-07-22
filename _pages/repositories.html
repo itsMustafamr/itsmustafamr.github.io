@@ -772,16 +772,16 @@ function showError() {
     '<div class="loading">Unable to load repositories. Please run the update script to generate statistics.</div>';
 }
 
-// Load data when page loads
-document.addEventListener('DOMContentLoaded', function() {
-  // Set current year
+function initGitHubStats () {
+  // set current year then fetch + schedule refresh
   document.getElementById('current-year').textContent = new Date().getFullYear();
-  
   loadGitHubStats();
-  
-  // Auto-refresh data every 2 minutes to keep it up-to-date
-  setInterval(function() {
-    loadGitHubStats();
-  }, 2 * 60 * 1000); // 2 minutes
-});
+  setInterval(loadGitHubStats, 2 * 60 * 1000);
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initGitHubStats);
+} else {
+  initGitHubStats();            // DOM already parsed – run now
+}
 </script> 
