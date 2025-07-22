@@ -32,12 +32,12 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2'      # or whatever Jekyll needs
-        bundler-cache: true      # installs Bundler and caches gems
+        ruby-version: '3.2'
+        bundler-cache: true      # Bundler installed & gems cached
 
     - name: Build site
       run: |
-        bundle install           # gems go into ~/.bundle and PATH is already set
+        bundle install           # uses cached gems if unchanged
         bundle exec jekyll build
         
     - name: Commit and push changes
