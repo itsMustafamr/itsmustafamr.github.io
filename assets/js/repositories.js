@@ -85,7 +85,11 @@ function updateContributionCalendar(contributions) {
       ${week.contributionDays.map(day => {
         const level = getContributionLevelDynamic(day.contributionCount, minCount, maxCount);
         const formattedDate = day.date;
-        return `<div class="calendar-day level-${level} ${day.contributionCount>0?'has-tooltip':''}" data-date="${formattedDate}" data-count="${day.contributionCount}"></div>`;
+        return `<div class="calendar-day level-${level} ${day.contributionCount>0?'has-tooltip':''}" 
+                     data-date="${formattedDate}" 
+                     data-count="${day.contributionCount}"
+                     onmouseenter="showTooltip(event, '${day.contributionCount} contribution${day.contributionCount !== 1 ? 's' : ''} on ${formattedDate}')"
+                     onmouseleave="hideTooltip()"></div>`;
       }).join('')}
     </div>`).join('');
   calendarContainer.innerHTML = calHTML;
@@ -101,6 +105,55 @@ function getContributionLevelDynamic(count, min, max) {
   if (count < t2) return 2;
   if (count < t3) return 3;
   return 4;
+}
+
+// Tooltip logic with position: fixed and high z-index
+function showTooltip(e, text) {
+  let tooltip = document.getElementById('calendar-tooltip');
+  if (!tooltip) {
+    tooltip = document.createElement('div');
+    tooltip.id = 'calendar-tooltip';
+    tooltip.style.position = 'fixed';
+    tooltip.style.zIndex = '9999';
+    tooltip.style.background = '#000';
+    tooltip.style.color = '#fff';
+    tooltip.style.padding = '8px 12px';
+    tooltip.style.borderRadius = '6px';
+    tooltip.style.fontSize = '0.8rem';
+    tooltip.style.pointerEvents = 'none';
+    tooltip.style.whiteSpace = 'nowrap';
+    tooltip.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
+    tooltip.style.transition = 'opacity 0.2s';
+    document.body.appendChild(tooltip);
+  }
+  tooltip.textContent = text;
+  tooltip.style.opacity = '1';
+  
+  // Position tooltip above the day square
+  const rect = e.target.getBoundingClientRect();
+  const tooltipWidth = tooltip.offsetWidth || 200;
+  const tooltipHeight = tooltip.offsetHeight || 40;
+  
+  let x = rect.left + rect.width / 2 - tooltipWidth / 2;
+  let y = rect.top - tooltipHeight - 8;
+  
+  // Ensure tooltip doesn't go off screen
+  if (x < 10) x = 10;
+  if (x + tooltipWidth > window.innerWidth - 10) {
+    x = window.innerWidth - tooltipWidth - 10;
+  }
+  if (y < 10) {
+    // If tooltip would go above screen, show it below
+    y = rect.bottom + 8;
+  }
+  
+  tooltip.style.left = x + 'px';
+  tooltip.style.top = y + 'px';
+}
+
+function hideTooltip() {
+  const tooltip = document.getElementById('calendar-tooltip');
+  if (tooltip) tooltip.style.opacity = 0;
 }
 
 function showError() {
