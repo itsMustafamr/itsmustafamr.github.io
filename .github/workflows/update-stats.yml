@@ -29,11 +29,15 @@ jobs:
       run: |
         python3 scripts/github_stats.py itsmustafamr
         
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2'      # or whatever Jekyll needs
+        bundler-cache: true      # installs Bundler and caches gems
+
     - name: Build site
       run: |
-        gem install bundler --user-install
-        export PATH="$HOME/.gem/ruby/$(ruby -e 'print RUBY_VERSION[/\\d+\\.\\d+/]')/bin:$PATH"
-        bundle install
+        bundle install           # gems go into ~/.bundle and PATH is already set
         bundle exec jekyll build
         
     - name: Commit and push changes
