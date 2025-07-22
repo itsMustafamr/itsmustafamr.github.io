@@ -84,7 +84,8 @@ function updateContributionCalendar(contributions) {
     <div class="calendar-week">
       ${week.contributionDays.map(day => {
         const level = getContributionLevelDynamic(day.contributionCount, minCount, maxCount);
-        return `<div class="calendar-day level-${level}"></div>`;
+        const formattedDate = day.date;
+        return `<div class="calendar-day level-${level} ${day.contributionCount>0?'has-tooltip':''}" data-date="${formattedDate}" data-count="${day.contributionCount}"></div>`;
       }).join('')}
     </div>`).join('');
   calendarContainer.innerHTML = calHTML;

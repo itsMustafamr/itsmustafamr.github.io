@@ -483,19 +483,21 @@ def generate_stats_json(username, output_file='assets/data/github_stats.json'):
     total_repos = len(repos_data)
     
     # Use detailed stats if available, otherwise estimate
+    if contributions and 'totalContributions' in contributions:
+        total_commits = contributions['totalContributions']
+    elif detailed_stats and detailed_stats.get('repositories'):
+        total_commits = sum(
+            repo.get('defaultBranchRef', {}).get('target', {}).get('history', {}).get('totalCount', 0)
+            for repo in detailed_stats['repositories']['nodes']
+        )
+    else:
+        total_commits = total_repos * 10  # rough fallback
+
     if detailed_stats:
-        # Get actual commit count from detailed stats
-        total_commits = 0
-        for repo in detailed_stats.get('repositories', {}).get('nodes', []):
-            if repo.get('defaultBranchRef', {}).get('target', {}).get('history'):
-                total_commits += repo['defaultBranchRef']['target']['history']['totalCount']
-        
         total_prs = detailed_stats.get('pullRequests', {}).get('totalCount', 0)
         total_issues = detailed_stats.get('issues', {}).get('totalCount', 0)
         contributed_repos = detailed_stats.get('repositoriesContributedTo', {}).get('totalCount', 0)
     else:
-        # Fallback estimates
-        total_commits = total_repos * 10
         total_prs = max(1, total_stars // 2)
         total_issues = max(1, total_stars // 3)
         contributed_repos = total_repos
