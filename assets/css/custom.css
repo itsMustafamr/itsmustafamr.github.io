@@ -193,3 +193,12 @@ body.dark-mode .updates-block {
   border-color: #4f8cff;
   transform: translateY(-2px) scale(1.01);
 }
+
+/* masthead logo size */
+.logo-item img{height:48px;}
+
+/* center nav links */
+.masthead__menu .visible-links{
+  flex:1;
+  justify-content:center;
+}
