@@ -213,6 +213,17 @@ redirect_from:
       </ul>
     </div>
   </div>
+
+  <div class="cv-section-card">
+    <h2>Contact</h2>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>Email:</strong> <a href="mailto:mr.mohdmustafa007@gmail.com">mr.mohdmustafa007@gmail.com</a></li>
+      <li><strong>Mobile:</strong> +1-515-916-9595</li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/itsMustafamr" target="_blank">itsMustafamr</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mohammed-musthafa-r/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+
 </div>
 
 
