@@ -110,6 +110,10 @@ redirect_from:
             <strong>Slice 100k work</strong><br>
             To generate cad designs from code prompts
           </li>
+          <li>
+            <strong>Nerf and applying PFN</strong><br>
+            To generate in context learning nerf with PFN implementation
+          </li>
         </ul>
       </div>
     </div>
