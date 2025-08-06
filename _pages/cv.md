@@ -184,6 +184,18 @@ redirect_from:
     </div>
     <hr>
     <div class="cv-skills-category">
+      <h3><em>CNNViz – Interactive PubMed Annotation Visualizer</em></h3>
+      <ul>
+        <li>Built a full-stack web app for automatic annotation and visualization of PubMed articles with entity extraction and SVG parse graphs.</li>
+        <li>
+          <a href="https:github.com/tre3x/CNN_Viz">Code</a>
+          <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Video</a> |
+          <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Document</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="cv-skills-category">
       <h3><em>Diseased Plant Detection</em></h3>
       <ul>
         <li>Created ResNet50, VGG16, and custom CNNs for new plant disease detection across 38 vision classes.</li>
