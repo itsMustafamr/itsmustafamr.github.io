@@ -202,3 +202,23 @@ body.dark-mode .updates-block {
   flex:1;
   justify-content:center;
 }
+
+/* Project cards hover effect */
+.project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform, box-shadow;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35) !important;
+}
+
+.project-card img {
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.02);
+  filter: brightness(1.05) saturate(1.05);
+}

@@ -188,8 +188,8 @@ redirect_from:
       <ul>
         <li>Built a full-stack web app for automatic annotation and visualization of PubMed articles with entity extraction and SVG parse graphs.</li>
         <li>
-          <a href="https:github.com/tre3x/CNN_Viz">Code</a>
-          <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Video</a> 
+          <a href="https:github.com/tre3x/CNN_Viz">Code</a>|
+          <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Video</a> |
           <a href="https://drive.google.com/file/d/1n_TNCCo-95ut_TST6ZYyh7vEp6841nB3/view?usp=sharing">Document</a>
         </li>
       </ul>
