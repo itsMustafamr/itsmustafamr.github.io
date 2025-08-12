@@ -4,15 +4,18 @@ layout: project
 date: 2024-04-10
 image: "images/CNN_Vizsualization.png"
 tags:
-  - NLP
-  - Information Extraction
-  - Visualization
-  - SVG
-  - PubMed
+  - PyTorch
+  - Activation Maps
+  - Feature Maps
+  - Filter Visualization
+  - Forward Hooks
+  - state_dict
+  - Layer-wise Visualization
+  - Training-time Visualization
 repo_url: "https://github.com/tre3x/CNN_Viz"
 ---
 
-Built a full-stack web app for automatic annotation and visualization of PubMed articles with entity extraction and SVG parse graphs. Provides interactive exploration of entities and relations with search and filtering.
+Built an interactive system to inspect intermediate layers of CNNs. Given an input image, architecture, and PyTorch it renders per‑layer activation maps and optionally visualizes filter weights. Added forward hooks and epoch snapshots to step through training for real‑time introspection and debugging
 
 <!--more-->
 

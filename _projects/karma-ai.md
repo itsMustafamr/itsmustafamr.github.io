@@ -1,7 +1,7 @@
 ---
 title: "Karma AI"
 layout: project
-date: 2024-03-20
+date: 2024-04-20
 image: "images/karma_ai.png"
 tags:
   - Computer Vision

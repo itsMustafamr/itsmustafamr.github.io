@@ -184,9 +184,9 @@ redirect_from:
     </div>
     <hr>
     <div class="cv-skills-category">
-      <h3><em>CNNViz – Interactive PubMed Annotation Visualizer</em></h3>
+      <h3><em>CNN Visualization</em></h3>
       <ul>
-        <li>Built a full-stack web app for automatic annotation and visualization of PubMed articles with entity extraction and SVG parse graphs.</li>
+        <li>Built an interactive system to inspect intermediate layers of CNNs. Given an input image, architecture, and PyTorch <code>state_dict</code>, it renders per‑layer activation maps and optionally visualizes filter weights. Added forward hooks and epoch snapshots to step through training for real‑time introspection and debugging</li>
         <li>
           <a href="https:github.com/tre3x/CNN_Viz">Code</a>|
           <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Video</a> |
