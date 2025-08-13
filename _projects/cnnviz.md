@@ -1,5 +1,5 @@
 ---
-title: "CNNViz – Visualize the intermediate layers of any CNN"
+title: "CNN Visualization"
 layout: project
 date: 2024-04-10
 image: "images/CNN_Vizsualization.png"
