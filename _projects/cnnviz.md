@@ -21,7 +21,7 @@ Built an interactive system to inspect intermediate layers of CNNs. Given an inp
 
 **Demo Video:**
 
-<iframe src="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/preview" width="100%" height="500px" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1xwwAuCXOdzLab0-nhCCaZ0imfJHVx0of/preview" width="100%" height="500px" allow="autoplay"></iframe>
 
 
 **Project Document:**
