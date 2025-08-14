@@ -189,7 +189,7 @@ redirect_from:
         <li>Built an interactive system to inspect intermediate layers of CNNs. Given an input image, architecture, and PyTorch <code>state_dict</code>, it renders per‑layer activation maps and optionally visualizes filter weights. Added forward hooks and epoch snapshots to step through training for real‑time introspection and debugging</li>
         <li>
           <a href="https:github.com/tre3x/CNN_Viz">Code</a>|
-          <a href="https://drive.google.com/file/d/1wzDS9u8cviT64zE-Q7tGQ-R3j_JVRqAl/view?usp=sharing">Video</a> |
+          <a href="https://drive.google.com/file/d/1xwwAuCXOdzLab0-nhCCaZ0imfJHVx0of/view?usp=sharing">Video</a> |
           <a href="https://drive.google.com/file/d/1n_TNCCo-95ut_TST6ZYyh7vEp6841nB3/view?usp=sharing">Document</a>
         </li>
       </ul>
