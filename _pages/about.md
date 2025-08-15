@@ -23,6 +23,8 @@ redirect_from:
 
       <p>Check out my <a href="/projects/">Projects</a>, <a href="/teaching/">Teaching experience</a>, and <a href="/cv/">CV</a> for more details!</p>
     </div>
+
+    NEED TO ADD SEARCH FUNCTION NEXT....something that has dropdown and can be used to go to the required page
     
     <div class="homepage-avatar">
       {% if site.author.avatar contains "://" %}
