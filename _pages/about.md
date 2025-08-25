@@ -19,13 +19,17 @@ redirect_from:
 
       <p>I'm passionate about exploring the intersections of computer vision, machine learning, and 3D reconstruction to push the boundaries of what's possible in visual computing. Beyond research, I actively enhance my coding and problem-solving skills through LeetCode and various programming challenges.</p>
 
-      <p>I believe in continuously learning something new every day, balancing hard work with fun and creativity along the way. 🚀</p>
+      <p>I believe in continuously learning something new every day, balancing hard work with fun and creativity along the way. 🚀
+      
+      
+      
+    NEED TO ADD SEARCH FUNCTION NEXT....something that has dropdown and can be used to go to the required page</p>
 
       <p>Check out my <a href="/projects/">Projects</a>, <a href="/teaching/">Teaching experience</a>, and <a href="/cv/">CV</a> for more details!</p>
     </div>
 
-    NEED TO ADD SEARCH FUNCTION NEXT....something that has dropdown and can be used to go to the required page
-    
+
+
     <div class="homepage-avatar">
       {% if site.author.avatar contains "://" %}
         <img src="{{ site.author.avatar }}" alt="{{ site.author.name }}" class="profile-image">
