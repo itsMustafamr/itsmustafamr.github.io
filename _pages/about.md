@@ -21,11 +21,9 @@ redirect_from:
 
       <p>I believe in continuously learning something new every day, balancing hard work with fun and creativity along the way. 🚀</p>
 
-      <p>You can reach out by using my contact info <a href="/contact">here</a>.</p>
-
-
-
       <p>Check out my <a href="/projects/">Projects</a>, <a href="/teaching/">Teaching experience</a>, and <a href="/cv/">CV</a> for more details!</p>
+
+      <p>You can reach out by using my contact info <a href="/contact">here</a>.</p>
 
 
     </div>
