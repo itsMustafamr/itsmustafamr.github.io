@@ -23,9 +23,15 @@ redirect_from:
 
       <p>Check out my <a href="/projects/">Projects</a>, <a href="/teaching/">Teaching experience</a>, and <a href="/cv/">CV</a> for more details!</p>
 
+      <p>
+        <a href="https://drive.google.com/file/d/1NSafYfmzddpe32ft9-ZsD5zoZeAHjO4B/view?usp=sharing" class="btn btn--primary" target="_blank" rel="noopener" aria-label="⬇">
+          <i class="fa-solid fa-download" aria-hidden="true"> CV</i>
+        </a>Download my curriculum vitae.
+        <!-- Feel free to reach out for any discussion. -->
+      </p>
+
       <p>You can reach out by using my contact info <a href="/contact">here</a>.</p>
-
-
+  
     </div>
 
 
