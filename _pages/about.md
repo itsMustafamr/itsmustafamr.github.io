@@ -17,7 +17,7 @@ redirect_from:
       <h2 class="about-heading">About me....</h2>
       <p>Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. My research focuses on developing innovative approaches to Neural Radiance Fields (NeRF) for high-quality 3D scene reconstruction, emphasizing advanced segmentation techniques and self-supervised learning methods.</p>
 
-      <p>I'm passionate about exploring the intersections of computer vision, machine learning, and 3D reconstruction to push the boundaries of what's possible in visual computing. Beyond research, I actively enhance my coding and problem-solving skills through LeetCode and various programming challenges.</p>
+      <p>I'm currently working on LLM-to-CAD model generation—building systems that translate natural language (and sketches) into editable, parametric CAD models with feature histories, constraints, and B-Rep/STEP outputs. Beyond research, I actively enhance my coding and problem-solving skills through LeetCode and various programming challenges.</p>
 
       <p>I believe in continuously learning something new every day, balancing hard work with fun and creativity along the way. 🚀</p>
 
