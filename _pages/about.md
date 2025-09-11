@@ -19,7 +19,7 @@ redirect_from:
 
       <p>I'm currently working on LLM-to-CAD model generation—building systems that translate natural language (and sketches) into editable, parametric CAD models with feature histories, constraints, and B-Rep/STEP outputs. Beyond research, I actively enhance my coding and problem-solving skills through LeetCode and various programming challenges.</p>
 
-      <p>I believe in continuously learning something new every day, balancing hard work with fun and creativity along the way. 🚀</p>
+      <p>I believe in continuously learning something new every day, balancing hard work with fun and creativity along the way.</p>
 
       <p>Check out my <a href="/projects/">Projects</a>, <a href="/teaching/">Teaching experience</a>, and <a href="/cv/">CV</a> for more details!</p>
 
