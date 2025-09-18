@@ -1,0 +1,41 @@
+# List your focus areas here with a weight from 1-100
+# Higher weight = larger text size = stronger proficiency
+# You can freely edit these or add/remove items later
+
+- name: Machine learning
+  weight: 95
+- name: Data science
+  weight: 70
+- name: Security
+  weight: 60
+- name: Cloud-computing
+  weight: 55
+- name: Courses
+  weight: 30
+- name: Android
+  weight: 25
+- name: Database
+  weight: 35
+- name: BigCode
+  weight: 40
+- name: big-data
+  weight: 45
+- name: SE4ML
+  weight: 50
+- name: Verification
+  weight: 40
+- name: Design
+  weight: 50
+- name: technical debt
+  weight: 35
+- name: program analysis
+  weight: 55
+- name: models
+  weight: 30
+- name: MSR
+  weight: 35
+- name: feedback loop
+  weight: 30
+- name: long-term
+  weight: 30
+

@@ -20,6 +20,9 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Focus"
+    url: /focus/
+
   - title: "Repositories"
     url: /repositories/
         
