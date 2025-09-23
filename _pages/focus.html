@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Focus"
+title: "Skills"
 permalink: /focus/
 author_profile: false
 ---
@@ -29,6 +29,19 @@ author_profile: false
 .tag-size-8 { font-size: 40px; }
 .tag-size-9 { font-size: 44px; }
 .tag-size-10 { font-size: 48px; }
+
+.course-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+.course-chip {
+  padding: 6px 12px;
+  border: 1px solid var(--global-text-color-light);
+  border-radius: 999px;
+  font-size: 14px;
+}
 </style>
 
 <div style="margin: 2rem 0;">
@@ -45,5 +58,16 @@ author_profile: false
       {% assign bucket = item.weight | times: 9 | divided_by: max_weight | plus: 1 %}
       <span class="focus-tag tag-size-{{ bucket }}">{{ item.name }}</span>
     {% endfor %}
+  </div>
+</div>
+
+<div style="margin: 2rem 0;">
+  <h2>Relevant Coursework</h2>
+  <div class="course-chips">
+    <span class="course-chip">Advanced Machine Learning</span>
+    <span class="course-chip">Deep Learning</span>
+    <span class="course-chip">Computer Vision</span>
+    <span class="course-chip">Parallel Computing</span>
+    <span class="course-chip">Algorithm Design</span>
   </div>
 </div>
