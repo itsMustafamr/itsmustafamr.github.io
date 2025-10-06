@@ -103,16 +103,12 @@ redirect_from:
             Developed a novel turntable-style pipeline integrating NeRF-SOS for stationary-camera capture, achieving &lt;2° reprojection error from 150 fixed-camera images. Implemented collaborative contrastive loss for zero-annotation 3D segmentation, improving IoU by 15% over supervised baselines. Leveraged SAM2-based masking to reduce training time by 30%, generating watertight meshes and per-object neural fields for CAD/robotics.
           </li>
           <li>
-            <strong>TabPFN for Efficient Tabular Data Modeling</strong><br>
-            Applied TabPFN, a transformer-based foundation model, to real-world tabular data tasks (e.g., classification, regression), achieving high accuracy with minimal preprocessing. Improved efficiency by optimizing inference speed, enabling scalable deployment in time-sensitive applications.
+            <strong>TabPFN for Time-Series Forecasting on Industrial IoT</strong><br>
+            Deployed TabPFN foundation model on multivariate sensor streams across 1,300+ hierarchical units (68,200+ series). Achieved state-of-the-art R² of 0.881 and RMSE of 7.1, outperforming traditional ML while reducing training time by ~100×. Productionized with sliding-window inference, calibration, and drift monitoring for robust, consistent performance.
           </li>
           <li>
-            <strong>Slice 100k work</strong><br>
-            To generate cad designs from code prompts
-          </li>
-          <li>
-            <strong>Nerf and applying PFN</strong><br>
-            To generate in context learning nerf with PFN implementation
+            <strong>Retrieval-Augmented Text2CAD System</strong><br>
+            Integrated Fusion360 Gallery (500+ reconstruction models) with GPT-4o to generate parametric CAD via sequence-based construction operations; achieved 75% semantic accuracy. Engineered a hybrid knowledge base with FAISS vector search over meshes (OBJ/STEP/SMT) and synthetic CAD sequences using L2-normalized embeddings and intelligent caching, reducing generation latency by ~40%.
           </li>
         </ul>
       </div>
