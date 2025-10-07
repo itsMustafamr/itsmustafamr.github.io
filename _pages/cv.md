@@ -99,6 +99,10 @@ redirect_from:
         <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Ames, IA</span>
         <ul>
           <li>
+         <strong>Slice 100k work</strong><br>
+            To generate cad designs from code prompts
+          </li>
+          <li>
             <strong>NeRF-SOS: Self-Supervised Object Segmentation for Stationary-Camera NeRF</strong><br>
             Developed a novel turntable-style pipeline integrating NeRF-SOS for stationary-camera capture, achieving &lt;2° reprojection error from 150 fixed-camera images. Implemented collaborative contrastive loss for zero-annotation 3D segmentation, improving IoU by 15% over supervised baselines. Leveraged SAM2-based masking to reduce training time by 30%, generating watertight meshes and per-object neural fields for CAD/robotics.
           </li>
