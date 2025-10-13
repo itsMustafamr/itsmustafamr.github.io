@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2025-10-13T14:18:00.060718",
+  "last_updated": "2025-10-13T15:17:36.199431",
   "user_info": {
     "name": "MrMustafa",
     "bio": null,
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 4,
-    "total_commits": 163,
+    "total_commits": 162,
     "total_prs": 2,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 163,
+    "totalContributions": 162,
     "weeks": [
       {
         "contributionDays": [
@@ -1160,7 +1160,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 7,
+            "contributionCount": 6,
             "date": "2025-05-06",
             "weekday": 1
           },
@@ -2043,7 +2043,7 @@
             "weekday": 5
           },
           {
-            "contributionCount": 18,
+            "contributionCount": 17,
             "date": "2025-10-12",
             "weekday": 6
           }
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 12,
+            "contributionCount": 13,
             "date": "2025-10-13",
             "weekday": 0
           }
