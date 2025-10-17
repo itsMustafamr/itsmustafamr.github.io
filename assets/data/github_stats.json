@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2025-10-17T16:21:51.194124",
+  "last_updated": "2025-10-17T17:14:55.519722",
   "user_info": {
     "name": "MrMustafa",
     "bio": null,
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 4,
-    "total_commits": 166,
+    "total_commits": 160,
     "total_prs": 2,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 166,
+    "totalContributions": 160,
     "weeks": [
       {
         "contributionDays": [
@@ -1887,7 +1887,7 @@
             "weekday": 2
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-09-18",
             "weekday": 3
           }
@@ -1916,7 +1916,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-09-23",
             "weekday": 1
           },
@@ -1965,7 +1965,7 @@
             "weekday": 2
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-10-02",
             "weekday": 3
           }
@@ -1989,12 +1989,12 @@
             "weekday": 6
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-10-06",
             "weekday": 0
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2025-10-07",
             "weekday": 1
           },
@@ -2043,7 +2043,7 @@
             "weekday": 2
           },
           {
-            "contributionCount": 16,
+            "contributionCount": 15,
             "date": "2025-10-16",
             "weekday": 3
           }
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 14,
+            "contributionCount": 15,
             "date": "2025-10-17",
             "weekday": 4
           }
