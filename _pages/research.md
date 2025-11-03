@@ -9,14 +9,14 @@ author_profile: false
 List your recent and ongoing research projects here, including a short summary, collaborators, and current status.
 
 - **Project Title 1**  
-  *Summary:* Brief summary of the project.  
-  *Collaborators:* Name(s).  
-  *Status:* Ongoing / Completed / Planned
+  Summary: Brief summary of the project.  
+  Collaborators: Name(s)  
+  Status: Ongoing / Completed / Planned
 
-- **Project Title 2**
-  *Summary:*
-  *Collaborators:*
-  *Status:*
+- **Project Title 2**  
+  Summary: ...  
+  Collaborators: ...  
+  Status: ...
 
 ---
 
@@ -24,8 +24,8 @@ List your recent and ongoing research projects here, including a short summary, 
 Describe collaborations you are planning, currently engaged in, or have completed.
 
 - **Collaboration Title**  
-  *Summary:* ...  
-  *Status:* Planned / Ongoing / Completed
+  Summary: ...  
+  Status: Planned / Ongoing / Completed
 
 ---
 
@@ -33,11 +33,14 @@ Describe collaborations you are planning, currently engaged in, or have complete
 List your submitted, under-review, accepted, and published papers. You may include planned submissions too.
 
 ### Submitted & Under Review
-- **Paper Title**, Conference/Journal, Submission Date: YYYY-MM-DD, Status: Under Review
-- **Paper Title**, Conference/Journal, Submission Date: YYYY-MM-DD, Status: Submitted
+- **Paper Title**, Conference/Journal  
+  Submission Date: YYYY-MM-DD  
+  Status: Submitted / Under Review
 
 ### Planned Submissions & Deadlines
-- **Planned Paper Title**, Target Venue, Planned Submission Date: YYYY-MM-DD, Notes: ...
+- **Planned Paper Title**, Target Venue  
+  Planned Submission Date: YYYY-MM-DD  
+  Notes: ...
 
 ---
 
