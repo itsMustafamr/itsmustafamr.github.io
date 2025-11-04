@@ -96,6 +96,7 @@ redirect_from:
     <h2>Recent updates</h2>
     <div class="updates-block">
       <ul>
+        <li>Oct 30, 2025  Submitted a paper to IEEE CIC/CogMI/TPS 2025 - LLM as a Communicator (LAAC)</li>
         <li>Mar 15, 2025  Winner, Applied AI Challenge 2025: Karma AI – Social Impact Award</li>
         <li>Feb 23, 2025  Constellation Prize, (Top 4/30+ teams), Ivy Data Visualization & Storytelling Case Competition, Ivy College of Business</li>
       </ul>
