@@ -6,17 +6,15 @@ author_profile: false
 ---
 
 ## Recent & Ongoing Research
-List your recent and ongoing research projects here, including a short summary, collaborators, and current status.
+- **Project 1 – Tabular Foundation Models**  
+  Summary: Exploring TabPFN, TabICL, TabDPT, and related in-context learning approaches for robust tabular understanding.  
+  Collaborators: Dr. Aditya, Dr. Adarsh  
+  Status: Ongoing
 
-- **Project Title 1**  
-  Summary: Brief summary of the project.  
-  Collaborators: Name(s)  
-  Status: Ongoing / Completed / Planned
-
-- **Project Title 2**  
-  Summary: ...  
-  Collaborators: ...  
-  Status: ...
+- **Project 2 – Text2CAD**  
+  Summary: Building a text-to-CAD agentic pipeline with self-verification loops for higher-fidelity generation.  
+  Collaborators: Dr. Aditya, Dr. Adarsh, Dr. Chinmay  
+  Status: Ongoing
 
 ---
 
