@@ -91,33 +91,47 @@ redirect_from:
   </div>
 
   <div class="cv-section-card">
-    <h2>Research / Internship</h2>
-    <div class="cv-edu-item">
-      <span class="cv-edu-years">August 2024 - Present</span>
-      <div class="cv-edu-details">
-        <strong>Research</strong><br>
-        <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Ames, IA</span>
-        <ul>
-          <li>
-         <strong>Slice 100k work</strong><br>
-            To generate cad designs from code prompts
-          </li>
-          <li>
-            <strong>NeRF-SOS: Self-Supervised Object Segmentation for Stationary-Camera NeRF</strong><br>
-            Developed a novel turntable-style pipeline integrating NeRF-SOS for stationary-camera capture, achieving &lt;2° reprojection error from 150 fixed-camera images. Implemented collaborative contrastive loss for zero-annotation 3D segmentation, improving IoU by 15% over supervised baselines. Leveraged SAM2-based masking to reduce training time by 30%, generating watertight meshes and per-object neural fields for CAD/robotics.
-          </li>
-          <li>
-            <strong>TabPFN for Time-Series Forecasting on Industrial IoT</strong><br>
-            Deployed TabPFN foundation model on multivariate sensor streams across 1,300+ hierarchical units (68,200+ series). Achieved state-of-the-art R² of 0.881 and RMSE of 7.1, outperforming traditional ML while reducing training time by ~100×. Productionized with sliding-window inference, calibration, and drift monitoring for robust, consistent performance.
-          </li>
-          <li>
-            <strong>Retrieval-Augmented Text2CAD System</strong><br>
-            Integrated Fusion360 Gallery (500+ reconstruction models) with GPT-4o to generate parametric CAD via sequence-based construction operations; achieved 75% semantic accuracy. Engineered a hybrid knowledge base with FAISS vector search over meshes (OBJ/STEP/SMT) and synthetic CAD sequences using L2-normalized embeddings and intelligent caching, reducing generation latency by ~40%.
-          </li>
-        </ul>
-      </div>
+  <h2>Research / Internship</h2>
+  <div class="cv-edu-item">
+    <span class="cv-edu-years">August 2024 - Present</span>
+    <div class="cv-edu-details">
+      <strong>Research</strong><br>
+      <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Ames, IA</span>
+      <ul>
+        <li>
+          <strong>Slice 100k work</strong><br>
+          To generate cad designs from code prompts
+        </li>
+        <li>
+          <strong>NeRF-SOS: Self-Supervised Object Segmentation for Stationary-Camera NeRF</strong><br>
+          Developed a novel turntable-style pipeline integrating NeRF-SOS for stationary-camera capture, achieving &lt;2° reprojection error from 150 fixed-camera images. Implemented collaborative contrastive loss for zero-annotation 3D segmentation, improving IoU by 15% over supervised baselines. Leveraged SAM2-based masking to reduce training time by 30%, generating watertight meshes and per-object neural fields for CAD/robotics.
+        </li>
+        <li>
+          <strong>TabPFN for Time-Series Forecasting on Industrial IoT</strong><br>
+          Deployed TabPFN foundation model on multivariate sensor streams across 1,300+ hierarchical units (68,200+ series). Achieved state-of-the-art R² of 0.881 and RMSE of 7.1, outperforming traditional ML while reducing training time by ~100×. Productionized with sliding-window inference, calibration, and drift monitoring for robust, consistent performance.
+        </li>
+        <li>
+          <strong>Agentic Retrieval-Augmented Text2CAD System (OpenSCAD)</strong><br>
+          <ul>
+            <li>
+              Architected <strong>multi-agent Text2CAD framework</strong> with hierarchical decomposition pipeline that converts natural language descriptions into parametric <strong>OpenSCAD</strong> models. Designed a <strong>3-agent system</strong> (Reasoner, Planner, Compiler) orchestrated via <strong>LangGraph</strong> for stateful design synthesis with conditional repair mechanisms.
+            </li>
+            <li>
+              Integrated <strong>retrieval-augmented generation</strong> using <strong>Fusion360 Gallery dataset (500+ reconstruction models)</strong> with GPT-5 for parametric CAD generation. Achieved <strong>75% semantic accuracy</strong> through sequence-based sketch–extrude–boolean construction operations and a hybrid FAISS-based knowledge base over meshes (OBJ/STEP/SMT) and synthetic CAD sequences, reducing generation latency by ~40%.
+            </li>
+            <li>
+              Implemented <strong>self-repair validation system</strong> with iterative error correction, improving <strong>schema pass rate from 73% to 94%</strong> and <strong>OpenSCAD compilation success from 68% to 89%</strong>, while maintaining <strong>91% parametric dependency preservation</strong> and correct spatial reasoning for relative placement and clearances.
+            </li>
+            <li>
+              Developed <strong>hierarchical assembly decomposition</strong> approach (Block → Parametric → Full Model). Validated system on complex furniture and mechanical assemblies (tables, chairs, components) with <strong>1000+ line JSON IR</strong> generation.
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
+</div>
+
 <div class="cv-section-card">
   <h2>Technical Skills</h2>
   <div class="cv-skills-category">
