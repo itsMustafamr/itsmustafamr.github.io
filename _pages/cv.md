@@ -133,6 +133,15 @@ redirect_from:
 </div>
 
 <div class="cv-section-card">
+  <h2>Publications</h2>
+  <ul>
+    <li>
+      <strong>M. M. Rafi*</strong>, A. Krishnamurthy, A. Balu, et al.: "Trustworthy LLM-Mediated Communication: Evaluating Information Fidelity in LLM as a Communicator (LAAC) Framework in Multiple Application Domains", <strong>IEEE DISTILL, 2025</strong>. <a href="https://arxiv.org/abs/2511.04184" target="_blank">[article]</a>
+    </li>
+  </ul>
+</div>
+
+<div class="cv-section-card">
   <h2>Technical Skills</h2>
   <div class="cv-skills-category">
     <h3><em>Programming Languages</em></h3>
