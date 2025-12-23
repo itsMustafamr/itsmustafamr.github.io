@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2025-12-23T12:41:35.961609",
+  "last_updated": "2025-12-23T13:36:22.621796",
   "user_info": {
     "name": "MrMustafa",
     "bio": null,
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 4,
-    "total_commits": 122,
+    "total_commits": 116,
     "total_prs": 2,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 122,
+    "totalContributions": 116,
     "weeks": [
       {
         "contributionDays": [
@@ -385,12 +385,12 @@
             "weekday": 2
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 4,
             "date": "2025-02-27",
             "weekday": 3
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 2,
             "date": "2025-02-28",
             "weekday": 4
           },
@@ -790,7 +790,7 @@
             "weekday": 5
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2025-05-11",
             "weekday": 6
           },
@@ -887,7 +887,7 @@
             "weekday": 1
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 1,
             "date": "2025-05-28",
             "weekday": 2
           },
@@ -1048,12 +1048,12 @@
             "weekday": 2
           },
           {
-            "contributionCount": 3,
+            "contributionCount": 0,
             "date": "2025-06-26",
             "weekday": 3
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-06-27",
             "weekday": 4
           },
@@ -1063,12 +1063,12 @@
             "weekday": 5
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-06-29",
             "weekday": 6
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-06-30",
             "weekday": 0
           }
@@ -1082,12 +1082,12 @@
             "weekday": 1
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-07-02",
             "weekday": 2
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-07-03",
             "weekday": 3
           },
@@ -1882,7 +1882,7 @@
             "weekday": 5
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 1,
             "date": "2025-11-23",
             "weekday": 6
           },
@@ -2038,7 +2038,7 @@
             "weekday": 5
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-12-21",
             "weekday": 6
           },
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 10,
+            "contributionCount": 11,
             "date": "2025-12-23",
             "weekday": 1
           }
