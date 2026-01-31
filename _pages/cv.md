@@ -136,6 +136,9 @@ redirect_from:
   <h2>Publications</h2>
   <ul>
     <li>
+      <strong>M. M. Rafi*</strong>, T. Ayanlade, B. Ganapathysubramanian, S. Sarkar, A. Krishnamurthy, C. Hegde, A. Balu: "Benchmarking Tabular Foundation Models for Agricultural Yield Prediction", <strong>AgriAI 2026 Workshop, AAAI 2026</strong>. <a href="https://openreview.net/forum?id=f5XUPRARlG" target="_blank">[article]</a>
+    </li>
+    <li>
       <strong>M. M. Rafi*</strong>, A. Krishnamurthy, A. Balu, et al.: "Trustworthy LLM-Mediated Communication: Evaluating Information Fidelity in LLM as a Communicator (LAAC) Framework in Multiple Application Domains", <strong>IEEE DISTILL, 2025</strong>. <a href="https://arxiv.org/abs/2511.04184" target="_blank">[article]</a>
     </li>
   </ul>
