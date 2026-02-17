@@ -1,25 +1,25 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2026-02-17T21:34:09.973132",
+  "last_updated": "2026-02-17T22:29:27.733551",
   "user_info": {
     "name": "MrMustafa",
     "bio": "Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. ",
     "location": "Ames",
     "followers": 3,
     "following": 2,
-    "public_repos": 36,
+    "public_repos": 37,
     "avatar_url": "https://avatars.githubusercontent.com/u/35178812?v=4"
   },
   "statistics": {
     "total_stars": 4,
-    "total_commits": 109,
+    "total_commits": 107,
     "total_prs": 2,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 109,
+    "totalContributions": 107,
     "weeks": [
       {
         "contributionDays": [
@@ -200,7 +200,7 @@
             "weekday": 4
           },
           {
-            "contributionCount": 4,
+            "contributionCount": 0,
             "date": "2025-03-22",
             "weekday": 5
           },
@@ -2043,7 +2043,7 @@
             "weekday": 6
           },
           {
-            "contributionCount": 13,
+            "contributionCount": 12,
             "date": "2026-02-16",
             "weekday": 0
           }
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 17,
+            "contributionCount": 20,
             "date": "2026-02-17",
             "weekday": 1
           }
