@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2026-02-20T11:30:31.257244",
+  "last_updated": "2026-02-20T12:55:18.934769",
   "user_info": {
     "name": "MrMustafa",
     "bio": "Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. ",
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 4,
-    "total_commits": 107,
+    "total_commits": 79,
     "total_prs": 2,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 107,
+    "totalContributions": 79,
     "weeks": [
       {
         "contributionDays": [
@@ -1882,7 +1882,7 @@
             "weekday": 1
           },
           {
-            "contributionCount": 24,
+            "contributionCount": 2,
             "date": "2026-01-21",
             "weekday": 2
           },
@@ -1940,7 +1940,7 @@
             "weekday": 4
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-01-31",
             "weekday": 5
           },
@@ -1965,7 +1965,7 @@
             "weekday": 2
           },
           {
-            "contributionCount": 4,
+            "contributionCount": 2,
             "date": "2026-02-05",
             "weekday": 3
           }
@@ -1979,7 +1979,7 @@
             "weekday": 4
           },
           {
-            "contributionCount": 4,
+            "contributionCount": 2,
             "date": "2026-02-07",
             "weekday": 5
           },
@@ -2033,12 +2033,12 @@
             "weekday": 0
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 1,
             "date": "2026-02-17",
             "weekday": 1
           },
           {
-            "contributionCount": 4,
+            "contributionCount": 3,
             "date": "2026-02-18",
             "weekday": 2
           },
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 7,
+            "contributionCount": 8,
             "date": "2026-02-20",
             "weekday": 4
           }
