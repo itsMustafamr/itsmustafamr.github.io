@@ -96,6 +96,14 @@
   ],
   "presentations": [
     {
+      "name": "Natural Language to 3D Geometric CAD: A Multi-Agent LLM Framework for Design Synthesis Using Hierarchical Decomposition",
+      "event": "NVIDIA GTC 2026 (Poster)",
+      "date": "2026-03-15",
+      "location": "San Jose, CA, USA",
+      "description": "Poster presentation on a multi-agent LLM framework that translates natural language into parametric 3D CAD models using hierarchical decomposition.",
+      "url": "https://drive.google.com/file/d/1-qs7N_WnKxkOgNpsu7IW01a5wmsZcqZM/view?usp=sharing"
+    },
+    {
       "name": "Talk 1 on Relevant Topic in Your Field",
       "event": "UC San Francisco, Department of Testing",
       "date": "2012-03-01",

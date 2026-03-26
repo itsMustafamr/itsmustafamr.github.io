@@ -96,7 +96,9 @@ redirect_from:
     <h2>Recent updates</h2>
     <div class="updates-block">
       <ul>
+        <li>Mar 15, 2026  Presented poster at <b>NVIDIA GTC 2026</b>, San Jose, CA - <a href="https://drive.google.com/file/d/1-qs7N_WnKxkOgNpsu7IW01a5wmsZcqZM/view?usp=sharing">Natural Language to 3D Geometric CAD: A Multi-Agent LLM Framework for Design Synthesis Using Hierarchical Decomposition</a></li>
         <li>Jan 31, 2026  Paper accepted at AgriAI 2026 Workshop, AAAI 2026 - <a href="https://openreview.net/forum?id=f5XUPRARlG">Benchmarking Tabular Foundation Models for Agricultural Yield Prediction</a></li>
+        <li>Dec 18, 2025  Poster accepted at <b>NVIDIA GTC 2026</b> - Natural Language to 3D Geometric CAD: A Multi-Agent LLM Framework for Design Synthesis Using Hierarchical Decomposition</li>
         <li>Nov 21, 2025  Submitted a paper to Agri AI Workshop, AAAI 2026 - Benchmarking Tabular Foundation Models for Agricultural Yield Prediction</li>
         <li>Oct 30, 2025  Submitted a paper to IEEE CIC/CogMI/TPS 2025 - LLM as a Communicator (LAAC)</li>
         <li>Mar 15, 2025  Winner, Applied AI Challenge 2025: Karma AI – Social Impact Award</li>

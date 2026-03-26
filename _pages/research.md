@@ -14,7 +14,8 @@ author_profile: false
 - **Project 2 – Text2CAD**  
   Summary: Building a text-to-CAD agentic pipeline with self-verification loops for higher-fidelity generation.  
   Collaborators: Dr. Aditya, Dr. Adarsh, Dr. Chinmay  
-  Status: Ongoing
+  Status: Ongoing  
+  Poster: Presented at [NVIDIA GTC 2026](https://drive.google.com/file/d/1-qs7N_WnKxkOgNpsu7IW01a5wmsZcqZM/view?usp=sharing), San Jose, CA (March 2026)
 
 ---
 
