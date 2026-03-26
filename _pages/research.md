@@ -15,7 +15,8 @@ author_profile: false
   Summary: Building a text-to-CAD agentic pipeline with self-verification loops for higher-fidelity generation.  
   Collaborators: Dr. Aditya, Dr. Adarsh, Dr. Chinmay  
   Status: Ongoing  
-  Poster: Presented at [NVIDIA GTC 2026](https://drive.google.com/file/d/1-qs7N_WnKxkOgNpsu7IW01a5wmsZcqZM/view?usp=sharing), San Jose, CA (March 2026)
+  Poster: Presented at [NVIDIA GTC 2026](https://drive.google.com/file/d/1-qs7N_WnKxkOgNpsu7IW01a5wmsZcqZM/view?usp=sharing), San Jose, CA (March 2026)  
+  Paper: Submitted to ICAD 2026 — *CRAFT: Corrective and Robust Multi-Agent Framework for Text-to-Parametric CAD* (March 2026)
 
 ---
 
@@ -32,9 +33,9 @@ Describe collaborations you are planning, currently engaged in, or have complete
 List your submitted, under-review, accepted, and published papers. You may include planned submissions too.
 
 ### Submitted & Under Review
-- **Paper Title**, Conference/Journal  
-  Submission Date: YYYY-MM-DD  
-  Status: Submitted / Under Review
+- **CRAFT: Corrective and Robust Multi-Agent Framework for Text-to-Parametric CAD**, ICAD 2026  
+  Submission Date: 2026-03-19  
+  Status: Under Review
 
 ### Planned Submissions & Deadlines
 - **Planned Paper Title**, Target Venue  
