@@ -103,27 +103,34 @@ redirect_from:
           To generate cad designs from code prompts
         </li>
         <li>
-          <strong>NeRF-SOS: Self-Supervised Object Segmentation for Stationary-Camera NeRF</strong><br>
-          Developed a novel turntable-style pipeline integrating NeRF-SOS for stationary-camera capture, achieving &lt;2° reprojection error from 150 fixed-camera images. Implemented collaborative contrastive loss for zero-annotation 3D segmentation, improving IoU by 15% over supervised baselines. Leveraged SAM2-based masking to reduce training time by 30%, generating watertight meshes and per-object neural fields for CAD/robotics.
+          <strong>NeRF pipeline (non-standard turntable capture)</strong><br>
+          Built a Neural Radiance Field pipeline for a stationary-camera, rotating-object setup: custom camera pose estimation and view synthesis, trained and evaluated on ISU HPC with multi-GPU acceleration. Extended with NeRF-SOS for self-supervised object segmentation—achieving &lt;2° reprojection error from 150 fixed-camera images, collaborative contrastive loss for zero-annotation 3D segmentation (15% IoU gain over supervised baselines), and SAM2-based masking (≈30% faster training), producing watertight meshes and per-object neural fields for CAD/robotics.
         </li>
         <li>
           <strong>TabPFN for Time-Series Forecasting on Industrial IoT</strong><br>
-          Deployed TabPFN foundation model on multivariate sensor streams across 1,300+ hierarchical units (68,200+ series). Achieved state-of-the-art R² of 0.881 and RMSE of 7.1, outperforming traditional ML while reducing training time by ~100×. Productionized with sliding-window inference, calibration, and drift monitoring for robust, consistent performance.
+          Deployed the TabPFN foundation model on multivariate sensor streams across 1,300+ hierarchical units (68,200+ observations). Achieved state-of-the-art R² of 0.881 and RMSE of 7.1, outperforming traditional ML while reducing training time by ~100×. Demonstrated foundation model evaluation, benchmarking, and custom PyTorch training loops with gradient checkpointing; production stack included sliding-window inference, calibration, drift monitoring, and deployment-focused monitoring for robust performance.
+        </li>
+        <li>
+          <strong>Distributed ML/LLM workflows on HPC</strong><br>
+          Developed distributed training and inference workflows on university HPC (SLURM, Nova): multi-node GPU jobs, parallel data preprocessing, and reproducible experiment tracking with MLflow and Weights &amp; Biases across 1000+ concurrent tasks.
         </li>
         <li>
           <strong>Agentic Retrieval-Augmented Text2CAD System (OpenSCAD)</strong><br>
           <ul>
             <li>
-              Architected <strong>multi-agent Text2CAD framework</strong> with hierarchical decomposition pipeline that converts natural language descriptions into parametric <strong>OpenSCAD</strong> models. Designed a <strong>3-agent system</strong> (Reasoner, Planner, Compiler) orchestrated via <strong>LangGraph</strong> for stateful design synthesis with conditional repair mechanisms.
+              Architected a <strong>fully traceable multi-agent LLM pipeline</strong> using <strong>LangGraph</strong> for stateful orchestration—conditional execution paths, inter-agent communication protocols, and hierarchical task decomposition across <strong>six specialized agents</strong> (Reasoner, Planner, Compiler, Verifier, Repair, Assembler)—with <strong>structured logging at each agent decision point</strong>, producing parametric <strong>OpenSCAD</strong> from natural language.
             </li>
             <li>
-              Integrated <strong>retrieval-augmented generation</strong> using <strong>Fusion360 Gallery dataset (500+ reconstruction models)</strong> with GPT-5 for parametric CAD generation. Achieved <strong>75% semantic accuracy</strong> through sequence-based sketch–extrude–boolean construction operations and a hybrid FAISS-based knowledge base over meshes (OBJ/STEP/SMT) and synthetic CAD sequences, reducing generation latency by ~40%.
+              Integrated <strong>retrieval-augmented generation</strong> with <strong>GPT-5</strong>: FAISS vector search over <strong>500+ domain artifacts</strong> (Fusion360 Gallery reconstructions and related assets) using <strong>L2-normalized embeddings</strong>, hybrid retrieval over meshes (OBJ/STEP/SMT) and synthetic CAD sequences; <strong>~40% latency reduction</strong> via intelligent caching; built <strong>systematic evaluation pipelines</strong> for multi-agent reasoning quality. Achieved <strong>75% semantic accuracy</strong> through sequence-based sketch–extrude–boolean construction.
             </li>
             <li>
-              Implemented <strong>self-repair validation system</strong> with iterative error correction, improving <strong>schema pass rate from 73% to 94%</strong> and <strong>OpenSCAD compilation success from 68% to 89%</strong>, while maintaining <strong>91% parametric dependency preservation</strong> and correct spatial reasoning for relative placement and clearances.
+              Designed <strong>agent-level reward mechanisms</strong> through <strong>iterative self-repair validation</strong>: system-level <strong>compilation and verification signals</strong> propagate back to individual agents for targeted correction, improving task success via <strong>post-training refinement strategies</strong>—including <strong>OpenSCAD compilation success from 68% to 89%</strong>—while improving <strong>schema pass rate from 73% to 94%</strong>, maintaining <strong>91% parametric dependency preservation</strong> and correct spatial reasoning for placement and clearances.
             </li>
             <li>
-              Developed <strong>hierarchical assembly decomposition</strong> approach (Block → Parametric → Full Model). Validated system on complex furniture and mechanical assemblies (tables, chairs, components) with <strong>1000+ line JSON IR</strong> generation.
+              Implemented <strong>credit assignment</strong> for the multi-agent stack: fine-grained feedback from global task outcomes to individual agent actions; <strong>40% reduction in cascading failures</strong> through localized error attribution and controlled ablation experiments.
+            </li>
+            <li>
+              Developed <strong>hierarchical assembly decomposition</strong> (Block → Parametric → Full Model). Validated on complex furniture and mechanical assemblies (tables, chairs, components) with <strong>1000+ line JSON IR</strong> generation.
             </li>
           </ul>
         </li>
