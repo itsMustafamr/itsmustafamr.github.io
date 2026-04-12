@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2026-04-12T17:33:05.062431",
+  "last_updated": "2026-04-12T18:45:11.797304",
   "user_info": {
     "name": "MrMustafa",
     "bio": "Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. ",
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 4,
-    "total_commits": 74,
+    "total_commits": 68,
     "total_prs": 2,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 74,
+    "totalContributions": 68,
     "weeks": [
       {
         "contributionDays": [
@@ -1906,7 +1906,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 4,
+            "contributionCount": 2,
             "date": "2026-03-17",
             "weekday": 1
           },
@@ -1955,7 +1955,7 @@
             "weekday": 2
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2026-03-26",
             "weekday": 3
           },
@@ -2004,7 +2004,7 @@
             "weekday": 4
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-04-04",
             "weekday": 5
           }
@@ -2033,7 +2033,7 @@
             "weekday": 2
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-04-09",
             "weekday": 3
           },
@@ -2043,7 +2043,7 @@
             "weekday": 4
           },
           {
-            "contributionCount": 19,
+            "contributionCount": 18,
             "date": "2026-04-11",
             "weekday": 5
           }
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 11,
+            "contributionCount": 12,
             "date": "2026-04-12",
             "weekday": 6
           }
