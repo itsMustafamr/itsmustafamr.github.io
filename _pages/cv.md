@@ -44,12 +44,13 @@ redirect_from:
       </div>
     </div>
     <div class="cv-edu-item">
-      <span class="cv-edu-years">August 2023 - 2025</span>
+      <span class="cv-edu-years">August 2023 - May 2026</span>
       <div class="cv-edu-details">
         <strong>Master of Science in Artificial Intelligence</strong><br>
         <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Iowa, USA</span>
         <ul>
           <li>GPA: 3.93/4.00</li>
+          <li>Thesis: <em>Benchmarking Tabular Foundation Models for Agricultural Yield Prediction</em></li>
         </ul>
       </div>
     </div>
@@ -253,6 +254,10 @@ redirect_from:
     <div class="cv-skills-category">
       <h3><em>Awards</em></h3>
       <ul>
+        <li>
+          <strong>Winner, Applied AI Challenge 2026:</strong> <em>AI-Assisted Making Award</em>, for <strong>Study Buddy</strong> - an AI-powered learning companion built with AI-assisted development tools<br>
+          <a href="https://drive.google.com/file/d/1T2295TaWJTAw5y4iPtA4K95SfgqSBv1v/view?usp=sharing">Certificate</a>
+        </li>
         <li><strong>Constellation Prize</strong> (Top 4/30+ teams), Ivy Data Visualization & Storytelling Case Competition, Ivy College of Business</li>
         <li>
           <strong>Winner, Applied AI Challenge 2025:</strong> <em>Karma AI – Social Impact Award</em> ($1500), for an AI solution empowering the visually impaired using multimodal prompting and GPT-based voice assistant<br>

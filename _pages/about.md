@@ -96,6 +96,8 @@ redirect_from:
     <h2>Recent updates</h2>
     <div class="updates-block">
       <ul>
+        <li>Apr 18, 2026  <b>Winner, 2026 Applied AI Challenge</b> - AI-Assisted Making Award, for <em>Study Buddy</em> <a href="https://drive.google.com/file/d/1T2295TaWJTAw5y4iPtA4K95SfgqSBv1v/view?usp=sharing">[certificate]</a></li>
+        <li>May 2026  Completed M.S. in Artificial Intelligence, Iowa State University - Thesis: <em>Benchmarking Tabular Foundation Models for Agricultural Yield Prediction</em></li>
         <li>Apr 8, 2026  Passed final Master's defense for my M.S. in AI</li>
         <li>Mar 19, 2026  Submitted a paper to ICAD 2026 - CRAFT: Corrective and Robust Multi-Agent Framework for Text-to-Parametric CAD</li>
         <li>Mar 15, 2026  Presented poster at <b>NVIDIA GTC 2026</b>, San Jose, CA - <a href="https://drive.google.com/file/d/1-qs7N_WnKxkOgNpsu7IW01a5wmsZcqZM/view?usp=sharing">Natural Language to 3D Geometric CAD: A Multi-Agent LLM Framework for Design Synthesis Using Hierarchical Decomposition</a></li>
