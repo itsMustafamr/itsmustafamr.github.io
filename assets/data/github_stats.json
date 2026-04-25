@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2026-04-25T13:00:20.503638",
+  "last_updated": "2026-04-25T14:05:42.963309",
   "user_info": {
     "name": "MrMustafa",
     "bio": "Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. ",
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 4,
-    "total_commits": 73,
+    "total_commits": 8,
     "total_prs": 2,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 73,
+    "totalContributions": 8,
     "weeks": [
       {
         "contributionDays": [
@@ -107,7 +107,7 @@
             "weekday": 5
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2025-05-11",
             "weekday": 6
           },
@@ -200,7 +200,7 @@
             "weekday": 1
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-05-28",
             "weekday": 2
           },
@@ -361,12 +361,12 @@
             "weekday": 2
           },
           {
-            "contributionCount": 3,
+            "contributionCount": 0,
             "date": "2025-06-26",
             "weekday": 3
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-06-27",
             "weekday": 4
           }
@@ -380,12 +380,12 @@
             "weekday": 5
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-06-29",
             "weekday": 6
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-06-30",
             "weekday": 0
           },
@@ -395,12 +395,12 @@
             "weekday": 1
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-07-02",
             "weekday": 2
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-07-03",
             "weekday": 3
           },
@@ -1043,7 +1043,7 @@
             "weekday": 5
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2025-10-26",
             "weekday": 6
           },
@@ -1316,12 +1316,12 @@
             "weekday": 5
           },
           {
-            "contributionCount": 5,
+            "contributionCount": 0,
             "date": "2025-12-14",
             "weekday": 6
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-12-15",
             "weekday": 0
           },
@@ -1623,7 +1623,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2026-02-07",
             "weekday": 5
           },
@@ -1677,7 +1677,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-02-17",
             "weekday": 1
           },
@@ -1706,7 +1706,7 @@
             "weekday": 5
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-02-22",
             "weekday": 6
           },
@@ -1731,7 +1731,7 @@
             "weekday": 3
           },
           {
-            "contributionCount": 5,
+            "contributionCount": 0,
             "date": "2026-02-27",
             "weekday": 4
           }
@@ -1833,7 +1833,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2026-03-17",
             "weekday": 1
           },
@@ -1882,7 +1882,7 @@
             "weekday": 2
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2026-03-26",
             "weekday": 3
           },
@@ -1935,7 +1935,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-04-04",
             "weekday": 5
           },
@@ -1960,7 +1960,7 @@
             "weekday": 2
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-04-09",
             "weekday": 3
           },
@@ -2028,7 +2028,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-04-21",
             "weekday": 1
           },
@@ -2038,12 +2038,12 @@
             "weekday": 2
           },
           {
-            "contributionCount": 8,
+            "contributionCount": 0,
             "date": "2026-04-23",
             "weekday": 3
           },
           {
-            "contributionCount": 15,
+            "contributionCount": 0,
             "date": "2026-04-24",
             "weekday": 4
           }
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 7,
+            "contributionCount": 0,
             "date": "2026-04-25",
             "weekday": 5
           }
