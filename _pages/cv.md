@@ -193,6 +193,21 @@ redirect_from:
   <div class="cv-section-card">
     <h2>Projects</h2>
     <div class="cv-skills-category">
+      <h3><em>narrAIt - Agentic Accessibility Companion for macOS</em></h3>
+      <ul>
+        <li>Built a voice-driven AI accessibility companion that explains UI elements, answers contextual questions, and points users to the right on-screen controls without taking over their mouse.</li>
+        <li>Won <strong>3rd Place</strong> at <strong>Swan Hacks Spring 2026</strong>, with a <strong>$1,200 prize and NVIDIA Jetson Orin Nano</strong> (per team member).</li>
+        <li>
+          <a href="https://github.com/rah757/NarrAIt">Code</a> |
+          <a href="https://devpost.com/software/celsius?ref_content=user-portfolio&ref_feature=in_progress">Devpost</a> |
+          <a href="https://www.youtube.com/watch?v=K0vZgihtcT0&t=1s">Demo Video</a> |
+          <a href="https://docs.google.com/presentation/d/1uhTLyZ0vBhjXIZ48vhbOrL5uvWWz7O2P/edit?usp=sharing&ouid=110093744032910100745&rtpof=true&sd=true">Document (PPT)</a> |
+          <a href="/images/narrait-highlight.png">Highlight Image</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="cv-skills-category">
       <h3><em>Prompt-to-Perception: Integrated Text-to-Image Pipeline</em></h3>
       <ul>
         <li>Developed an end-to-end system for text-to-image generation using prompt refinement and Stable Diffusion 2.1.</li>
@@ -254,6 +269,10 @@ redirect_from:
     <div class="cv-skills-category">
       <h3><em>Awards</em></h3>
       <ul>
+        <li>
+          <strong>3rd Place, Swan Hacks Spring 2026:</strong> <em>narrAIt</em> (AI navigation companion for accessibility); received <strong>$1,200</strong> and an <strong>NVIDIA Jetson Orin Nano</strong> (per team member)<br>
+          <a href="https://swan-hacks-spring-2026.devpost.com/">Hackathon</a> | <a href="https://devpost.com/software/celsius?ref_content=user-portfolio&ref_feature=in_progress">Project</a> | <a href="https://www.youtube.com/watch?v=K0vZgihtcT0&t=1s">Demo</a>
+        </li>
         <li>
           <strong>Winner, Applied AI Challenge 2026:</strong> <em>AI-Assisted Making Award</em>, for <strong>Study Buddy</strong> - an AI-powered learning companion built with AI-assisted development tools<br>
           <a href="https://drive.google.com/file/d/1T2295TaWJTAw5y4iPtA4K95SfgqSBv1v/view?usp=sharing">Certificate</a>
