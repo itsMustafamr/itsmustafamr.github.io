@@ -193,6 +193,18 @@ redirect_from:
   <div class="cv-section-card">
     <h2>Projects</h2>
     <div class="cv-skills-category">
+      <h3><em>VoiceForge VR - Interactive Voice-Controlled VR Experience</em></h3>
+      <ul>
+        <li>Built an interactive VR prototype focused on natural user interaction with voice-assisted control and in-world UI feedback for immersive task flow.</li>
+        <li>
+          <a href="https://drive.google.com/file/d/18W6rAzLZePAvoGty4ZKCC9fdKEBuLCBx/view?usp=drive_link">Demo Video</a> |
+          <a href="https://drive.google.com/file/d/1euOrsBzDhWS_mw3z9FvmVwaBKzhVdCCJ/view?usp=sharing">Document (Final Report)</a> |
+          <a href="/images/voiceforgevr-highlight.png">Highlight Image</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="cv-skills-category">
       <h3><em>narrAIt - Agentic Accessibility Companion for macOS</em></h3>
       <ul>
         <li>Built a voice-driven AI accessibility companion that explains UI elements, answers contextual questions, and points users to the right on-screen controls without taking over their mouse.</li>
