@@ -193,6 +193,17 @@ redirect_from:
   <div class="cv-section-card">
     <h2>Projects</h2>
     <div class="cv-skills-category">
+      <h3><em>Jarvis-home - Fully Local AI Assistant on Jetson Orin Nano</em></h3>
+      <ul>
+        <li>Building a fully local, continuously evolving AI assistant on NVIDIA Jetson Orin Nano using whisper.cpp + Gemma 4 + Piper, with daily improvements to voice interaction, routing, and assistant capabilities.</li>
+        <li>
+          <a href="https://github.com/itsMustafamr/Jarvis-home">Code</a> |
+          <a href="images/jarvis-home.gif">Main GIF</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="cv-skills-category">
       <h3><em>VoiceForge VR - Interactive Voice-Controlled VR Experience</em></h3>
       <ul>
         <li>Built an interactive VR prototype focused on natural user interaction with voice-assisted control and in-world UI feedback for immersive task flow.</li>

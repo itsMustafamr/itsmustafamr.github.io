@@ -96,6 +96,7 @@ redirect_from:
     <h2>Recent updates</h2>
     <div class="updates-block">
       <ul>
+        <li>May 21, 2026  Started <b>Jarvis-home</b> - my new fully local AI assistant project on NVIDIA Jetson Orin Nano; tracking active daily upgrades <a href="https://github.com/itsMustafamr/Jarvis-home">[repo]</a></li>
         <li>May 3, 2026  Won <b>3rd Place</b> at <a href="https://swan-hacks-spring-2026.devpost.com/">Swan Hacks Spring 2026</a> for <a href="https://devpost.com/software/celsius?ref_content=user-portfolio&ref_feature=in_progress"><em>narrAIt</em></a>; received an <b>NVIDIA Jetson Orin Nano</b></li>
         <li>Apr 18, 2026  <b>Winner, 2026 Applied AI Challenge</b> - AI-Assisted Making Award, for <em>Study Buddy</em> <a href="https://drive.google.com/file/d/1T2295TaWJTAw5y4iPtA4K95SfgqSBv1v/view?usp=sharing">[certificate]</a></li>
         <li>May 2026  Completed M.S. in Artificial Intelligence, Iowa State University - Thesis: <em>Benchmarking Tabular Foundation Models for Agricultural Yield Prediction</em></li>
