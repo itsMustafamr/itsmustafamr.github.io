@@ -27,7 +27,3 @@ Core stack: Gemma 4 E2B (llama.cpp), whisper.cpp, Piper TTS, and local routing f
 - Wake word flow ("Hey Jarvis") on-device
 - Better multimodal vision path for hardware mode
 - Music and utility intents with faster routing
-
-**Image setup note:** If you later want to host the GIF locally, place it at `images/jarvis-home.gif` and update `image:` in this file to:
-
-`image: "images/jarvis-home.gif"`
