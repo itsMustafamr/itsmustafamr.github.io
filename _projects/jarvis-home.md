@@ -2,7 +2,7 @@
 title: "Jarvis-home"
 layout: project
 date: 2026-05-21
-image: "images/jarvis-home.gif"
+image: "images/Jarvis_v1.gif"
 tags:
   - Jetson Orin Nano
   - Local AI
@@ -19,7 +19,7 @@ Core stack: Gemma 4 E2B (llama.cpp), whisper.cpp, Piper TTS, and local routing f
 
 <!--more-->
 
-**Project Links:** [GitHub](https://github.com/itsMustafamr/Jarvis-home)
+**Project Links:** [GitHub](https://github.com/itsMustafamr/Jarvis-home) | [Main GIF](/images/Jarvis_v1.gif) | [Highlight Image](/images/Jarvis_highlight.png)
 
 **Current Focus and Roadmap:**
 

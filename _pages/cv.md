@@ -198,7 +198,8 @@ redirect_from:
         <li>Building a fully local, continuously evolving AI assistant on NVIDIA Jetson Orin Nano using whisper.cpp + Gemma 4 + Piper, with daily improvements to voice interaction, routing, and assistant capabilities.</li>
         <li>
           <a href="https://github.com/itsMustafamr/Jarvis-home">Code</a> |
-          <a href="images/jarvis-home.gif">Main GIF</a>
+          <a href="/images/Jarvis_v1.gif">Main GIF</a> |
+          <a href="/images/Jarvis_highlight.png">Highlight Image</a>
         </li>
       </ul>
     </div>
