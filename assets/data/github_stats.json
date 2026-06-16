@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2026-06-16T19:32:31.881420",
+  "last_updated": "2026-06-16T22:09:33.398542",
   "user_info": {
     "name": "MrMustafa",
     "bio": "Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. ",
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 3,
-    "total_commits": 125,
+    "total_commits": 95,
     "total_prs": 1,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 125,
+    "totalContributions": 95,
     "weeks": [
       {
         "contributionDays": [
@@ -1906,22 +1906,22 @@
             "weekday": 2
           },
           {
-            "contributionCount": 15,
+            "contributionCount": 7,
             "date": "2026-05-21",
             "weekday": 3
           },
           {
-            "contributionCount": 5,
+            "contributionCount": 2,
             "date": "2026-05-22",
             "weekday": 4
           },
           {
-            "contributionCount": 16,
+            "contributionCount": 9,
             "date": "2026-05-23",
             "weekday": 5
           },
           {
-            "contributionCount": 21,
+            "contributionCount": 10,
             "date": "2026-05-24",
             "weekday": 6
           },
@@ -1935,7 +1935,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 2,
+            "contributionCount": 1,
             "date": "2026-05-26",
             "weekday": 1
           },
@@ -2028,7 +2028,7 @@
             "weekday": 3
           },
           {
-            "contributionCount": 3,
+            "contributionCount": 2,
             "date": "2026-06-12",
             "weekday": 4
           },
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 3,
+            "contributionCount": 4,
             "date": "2026-06-16",
             "weekday": 1
           }
