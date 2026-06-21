@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2026-06-21T14:10:45.777187",
+  "last_updated": "2026-06-21T16:43:28.343170",
   "user_info": {
     "name": "MrMustafa",
     "bio": "Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. ",
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 3,
-    "total_commits": 73,
+    "total_commits": 116,
     "total_prs": 1,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 73,
+    "totalContributions": 116,
     "weeks": [
       {
         "contributionDays": [
@@ -1302,7 +1302,7 @@
             "weekday": 4
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 2,
             "date": "2026-02-07",
             "weekday": 5
           }
@@ -1414,7 +1414,7 @@
             "weekday": 3
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 5,
             "date": "2026-02-27",
             "weekday": 4
           },
@@ -1516,7 +1516,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 2,
             "date": "2026-03-17",
             "weekday": 1
           },
@@ -1833,7 +1833,7 @@
             "weekday": 1
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 1,
             "date": "2026-05-13",
             "weekday": 2
           },
@@ -1887,7 +1887,7 @@
             "weekday": 4
           },
           {
-            "contributionCount": 13,
+            "contributionCount": 16,
             "date": "2026-05-23",
             "weekday": 5
           }
@@ -2028,22 +2028,22 @@
             "weekday": 1
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 2,
             "date": "2026-06-17",
             "weekday": 2
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 6,
             "date": "2026-06-18",
             "weekday": 3
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 8,
             "date": "2026-06-19",
             "weekday": 4
           },
           {
-            "contributionCount": 0,
+            "contributionCount": 10,
             "date": "2026-06-20",
             "weekday": 5
           }
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 0,
+            "contributionCount": 4,
             "date": "2026-06-21",
             "weekday": 6
           }
