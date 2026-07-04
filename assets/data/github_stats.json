@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2026-07-04T11:24:45.404604",
+  "last_updated": "2026-07-04T13:20:01.906471",
   "user_info": {
     "name": "MrMustafa",
     "bio": "Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. ",
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 3,
-    "total_commits": 87,
+    "total_commits": 13,
     "total_prs": 1,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 87,
+    "totalContributions": 13,
     "weeks": [
       {
         "contributionDays": [
@@ -653,7 +653,7 @@
             "weekday": 5
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2025-10-26",
             "weekday": 6
           },
@@ -1233,7 +1233,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2026-02-07",
             "weekday": 5
           },
@@ -1287,7 +1287,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-02-17",
             "weekday": 1
           },
@@ -1316,7 +1316,7 @@
             "weekday": 5
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-02-22",
             "weekday": 6
           },
@@ -1341,7 +1341,7 @@
             "weekday": 3
           },
           {
-            "contributionCount": 5,
+            "contributionCount": 0,
             "date": "2026-02-27",
             "weekday": 4
           }
@@ -1794,22 +1794,22 @@
             "weekday": 0
           },
           {
-            "contributionCount": 3,
+            "contributionCount": 0,
             "date": "2026-05-19",
             "weekday": 1
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-05-20",
             "weekday": 2
           },
           {
-            "contributionCount": 7,
+            "contributionCount": 0,
             "date": "2026-05-21",
             "weekday": 3
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2026-05-22",
             "weekday": 4
           }
@@ -1818,12 +1818,12 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 9,
+            "contributionCount": 0,
             "date": "2026-05-23",
             "weekday": 5
           },
           {
-            "contributionCount": 10,
+            "contributionCount": 0,
             "date": "2026-05-24",
             "weekday": 6
           },
@@ -1833,7 +1833,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-05-26",
             "weekday": 1
           },
@@ -2028,22 +2028,22 @@
             "weekday": 0
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-06-30",
             "weekday": 1
           },
           {
-            "contributionCount": 8,
+            "contributionCount": 0,
             "date": "2026-07-01",
             "weekday": 2
           },
           {
-            "contributionCount": 9,
+            "contributionCount": 0,
             "date": "2026-07-02",
             "weekday": 3
           },
           {
-            "contributionCount": 9,
+            "contributionCount": 0,
             "date": "2026-07-03",
             "weekday": 4
           }
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 3,
+            "contributionCount": 0,
             "date": "2026-07-04",
             "weekday": 5
           }
