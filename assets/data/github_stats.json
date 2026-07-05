@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2026-07-05T00:07:23.487656",
+  "last_updated": "2026-07-05T04:54:38.923087",
   "user_info": {
     "name": "MrMustafa",
     "bio": "Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. ",
@@ -12,14 +12,14 @@
   },
   "statistics": {
     "total_stars": 3,
-    "total_commits": 87,
+    "total_commits": 5,
     "total_prs": 1,
     "total_issues": 1,
     "contributed_repos": 30,
     "grade": "B+"
   },
   "contributions": {
-    "totalContributions": 87,
+    "totalContributions": 5,
     "weeks": [
       {
         "contributionDays": [
@@ -648,7 +648,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2025-10-26",
             "weekday": 6
           },
@@ -921,12 +921,12 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 5,
+            "contributionCount": 0,
             "date": "2025-12-14",
             "weekday": 6
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2025-12-15",
             "weekday": 0
           },
@@ -1224,7 +1224,7 @@
             "weekday": 4
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2026-02-07",
             "weekday": 5
           }
@@ -1282,7 +1282,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-02-17",
             "weekday": 1
           },
@@ -1311,7 +1311,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-02-22",
             "weekday": 6
           },
@@ -1336,7 +1336,7 @@
             "weekday": 3
           },
           {
-            "contributionCount": 5,
+            "contributionCount": 0,
             "date": "2026-02-27",
             "weekday": 4
           },
@@ -1438,7 +1438,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2026-03-17",
             "weekday": 1
           },
@@ -1789,27 +1789,27 @@
             "weekday": 0
           },
           {
-            "contributionCount": 3,
+            "contributionCount": 0,
             "date": "2026-05-19",
             "weekday": 1
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-05-20",
             "weekday": 2
           },
           {
-            "contributionCount": 7,
+            "contributionCount": 0,
             "date": "2026-05-21",
             "weekday": 3
           },
           {
-            "contributionCount": 2,
+            "contributionCount": 0,
             "date": "2026-05-22",
             "weekday": 4
           },
           {
-            "contributionCount": 9,
+            "contributionCount": 0,
             "date": "2026-05-23",
             "weekday": 5
           }
@@ -1818,7 +1818,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 10,
+            "contributionCount": 0,
             "date": "2026-05-24",
             "weekday": 6
           },
@@ -1828,7 +1828,7 @@
             "weekday": 0
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-05-26",
             "weekday": 1
           },
@@ -2028,22 +2028,22 @@
             "weekday": 1
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-07-01",
             "weekday": 2
           },
           {
-            "contributionCount": 9,
+            "contributionCount": 0,
             "date": "2026-07-02",
             "weekday": 3
           },
           {
-            "contributionCount": 9,
+            "contributionCount": 0,
             "date": "2026-07-03",
             "weekday": 4
           },
           {
-            "contributionCount": 11,
+            "contributionCount": 0,
             "date": "2026-07-04",
             "weekday": 5
           }
