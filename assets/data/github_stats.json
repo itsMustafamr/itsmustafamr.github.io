@@ -1,6 +1,6 @@
 {
   "username": "itsmustafamr",
-  "last_updated": "2026-08-07T08:56:38.847139",
+  "last_updated": "2026-08-07T10:01:37.300149",
   "user_info": {
     "name": "MrMustafa",
     "bio": "Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. ",
@@ -2028,7 +2028,7 @@
             "weekday": 6
           },
           {
-            "contributionCount": 1,
+            "contributionCount": 0,
             "date": "2026-08-03",
             "weekday": 0
           },
@@ -2052,7 +2052,7 @@
       {
         "contributionDays": [
           {
-            "contributionCount": 4,
+            "contributionCount": 5,
             "date": "2026-08-07",
             "weekday": 4
           }
