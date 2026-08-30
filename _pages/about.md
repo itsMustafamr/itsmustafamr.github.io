@@ -97,6 +97,7 @@ redirect_from:
     <div class="updates-block">
       <ul>
         <li>Aug 27, 2026  Launched the <b>CRAFT</b> project website - an interactive walkthrough of the framework, results, and generated CAD models <a href="https://idealab-isu.github.io/CRAFT/">[project page]</a></li>
+        <li>Jul 30, 2026  Gave an <b>oral presentation</b> of <b>CRAFT</b> at <b>IEEE ICLAD 2026</b>, Stanford University, Stanford, CA (Jul 30-31) <a href="https://idealab-isu.github.io/CRAFT/">[project page]</a></li>
         <li>May 26, 2026  Paper accepted at <b>ICLAD 2026</b> (IEEE International Conference on LLM-Aided Design) - <a href="https://idealab-isu.github.io/CRAFT/">CRAFT: Corrective and Robust Multi-Agent Framework for Text-to-Parametric CAD</a></li>
         <li>May 21, 2026  Started <b>Jarvis-home</b> - my new fully local AI assistant project on NVIDIA Jetson Orin Nano; tracking active daily upgrades <a href="https://github.com/itsMustafamr/Jarvis-home">[repo]</a></li>
         <li>May 3, 2026  Won <b>3rd Place</b> at <a href="https://swan-hacks-spring-2026.devpost.com/">Swan Hacks Spring 2026</a> for <a href="https://devpost.com/software/celsius?ref_content=user-portfolio&ref_feature=in_progress"><em>narrAIt</em></a>; received an <b>NVIDIA Jetson Orin Nano</b></li>
