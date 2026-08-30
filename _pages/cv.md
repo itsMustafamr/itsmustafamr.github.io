@@ -71,16 +71,6 @@ redirect_from:
   <div class="cv-section-card">
     <h2>Experience</h2>
     <div class="cv-edu-item">
-      <span class="cv-edu-years">August 2026 - December 2026</span>
-      <div class="cv-edu-details">
-        <strong>AI Research Engineering Intern, Translational Research</strong><br>
-        <span class="cv-edu-institution"><i class="fa fa-building"></i> Multiple Myeloma Research Foundation (MMRF) - Remote, Norwalk, CT</span>
-        <ul>
-          <li>Building an agentic AI research copilot for the MMRF <strong>Virtual Lab</strong> platform (Gen3 data commons on <strong>AWS</strong>), translating natural-language research questions into cohort discovery and analysis over large-scale <strong>multi-omic and clinical myeloma datasets</strong> using LLMs, RAG, and platform APIs.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="cv-edu-item">
       <span class="cv-edu-years">August 2023 - August 2024</span>
       <div class="cv-edu-details">
         <strong>Graduate Teaching Assistant</strong><br>
@@ -102,7 +92,7 @@ redirect_from:
   </div>
 
   <div class="cv-section-card">
-  <h2>Research</h2>
+  <h2>Research / Internship</h2>
   <div class="cv-edu-item">
     <span class="cv-edu-years">August 2024 - Present</span>
     <div class="cv-edu-details">
@@ -150,6 +140,16 @@ redirect_from:
           <strong>Slice 100k work</strong><br>
           To generate cad designs from code prompts
         </li>
+      </ul>
+    </div>
+  </div>
+  <div class="cv-edu-item">
+    <span class="cv-edu-years">August 2026 - December 2026</span>
+    <div class="cv-edu-details">
+      <strong>AI Research Engineering Intern, Translational Research</strong><br>
+      <span class="cv-edu-institution"><i class="fa fa-building"></i> Multiple Myeloma Research Foundation (MMRF) - Remote, Norwalk, CT</span>
+      <ul>
+        <li>Building an agentic AI research copilot for the MMRF <strong>Virtual Lab</strong> platform (Gen3 data commons on <strong>AWS</strong>), translating natural-language research questions into cohort discovery and analysis over large-scale <strong>multi-omic and clinical myeloma datasets</strong> using LLMs, RAG, and platform APIs.</li>
       </ul>
     </div>
   </div>
