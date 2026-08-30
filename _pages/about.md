@@ -17,7 +17,7 @@ redirect_from:
       <h2 class="about-heading">About me....</h2>
       <p>Hi! I'm Mustafa, a Ph.D. student in Computer Science at Iowa State University, advised by Dr. Adarsh Krishnamurthy and Dr. Aditya Balu. I work with Dr. Adarsh in the Idea Lab, and I also collaborate closely with Dr. Chinmay and Dr. Zanhong. My research focuses on developing innovative approaches to Neural Radiance Fields (NeRF) for high-quality 3D scene reconstruction, emphasizing advanced segmentation techniques and self-supervised learning methods.</p>
 
-      <p>I'm currently working on LLM-to-CAD model generation—building systems that translate natural language (and sketches) into editable, parametric CAD models with feature histories, constraints, and B-Rep/STEP outputs. Beyond research, I actively enhance my coding and problem-solving skills through LeetCode and various programming challenges.</p>
+      <p>I'm currently working on LLM-to-CAD model generation—building systems that translate natural language (and sketches) into editable, parametric CAD models with feature histories, constraints, and B-Rep/STEP outputs. This line of work led to <a href="https://idealab-isu.github.io/CRAFT/">CRAFT</a>, a corrective multi-agent framework for text-to-parametric CAD, accepted at <b>ICLAD 2026</b>. I'm now extending it with <b>VISTA-CAD</b>, which iteratively refines parametric CAD programs using visual feedback (manuscript in preparation). Beyond research, I actively enhance my coding and problem-solving skills through LeetCode and various programming challenges.</p>
 
       <p>I believe in continuously learning something new every day, balancing hard work with fun and creativity along the way.</p>
 
@@ -96,12 +96,14 @@ redirect_from:
     <h2>Recent updates</h2>
     <div class="updates-block">
       <ul>
+        <li>Aug 27, 2026  Launched the <b>CRAFT</b> project website - an interactive walkthrough of the framework, results, and generated CAD models <a href="https://idealab-isu.github.io/CRAFT/">[project page]</a></li>
+        <li>May 26, 2026  Paper accepted at <b>ICLAD 2026</b> (IEEE International Conference on LLM-Aided Design) - <a href="https://idealab-isu.github.io/CRAFT/">CRAFT: Corrective and Robust Multi-Agent Framework for Text-to-Parametric CAD</a></li>
         <li>May 21, 2026  Started <b>Jarvis-home</b> - my new fully local AI assistant project on NVIDIA Jetson Orin Nano; tracking active daily upgrades <a href="https://github.com/itsMustafamr/Jarvis-home">[repo]</a></li>
         <li>May 3, 2026  Won <b>3rd Place</b> at <a href="https://swan-hacks-spring-2026.devpost.com/">Swan Hacks Spring 2026</a> for <a href="https://devpost.com/software/celsius?ref_content=user-portfolio&ref_feature=in_progress"><em>narrAIt</em></a>; received an <b>NVIDIA Jetson Orin Nano</b></li>
         <li>Apr 18, 2026  <b>Winner, 2026 Applied AI Challenge</b> - AI-Assisted Making Award, for <em>Study Buddy</em> <a href="https://drive.google.com/file/d/1T2295TaWJTAw5y4iPtA4K95SfgqSBv1v/view?usp=sharing">[certificate]</a></li>
         <li>May 2026  Completed M.S. in Artificial Intelligence, Iowa State University - Thesis: <em>Benchmarking Tabular Foundation Models for Agricultural Yield Prediction</em></li>
         <li>Apr 8, 2026  Passed final Master's defense for my M.S. in AI</li>
-        <li>Mar 19, 2026  Submitted a paper to ICAD 2026 - CRAFT: Corrective and Robust Multi-Agent Framework for Text-to-Parametric CAD</li>
+        <li>Mar 19, 2026  Submitted a paper to ICLAD 2026 - CRAFT: Corrective and Robust Multi-Agent Framework for Text-to-Parametric CAD</li>
         <li>Mar 15, 2026  Presented poster at <b>NVIDIA GTC 2026</b>, San Jose, CA - <a href="https://drive.google.com/file/d/1-qs7N_WnKxkOgNpsu7IW01a5wmsZcqZM/view?usp=sharing">Natural Language to 3D Geometric CAD: A Multi-Agent LLM Framework for Design Synthesis Using Hierarchical Decomposition</a></li>
         <li>Jan 31, 2026  Paper accepted at AgriAI 2026 Workshop, AAAI 2026 - <a href="https://openreview.net/forum?id=f5XUPRARlG">Benchmarking Tabular Foundation Models for Agricultural Yield Prediction</a></li>
         <li>Dec 18, 2025  Poster accepted at <b>NVIDIA GTC 2026</b> - Natural Language to 3D Geometric CAD: A Multi-Agent LLM Framework for Design Synthesis Using Hierarchical Decomposition</li>

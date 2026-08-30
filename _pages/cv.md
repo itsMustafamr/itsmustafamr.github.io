@@ -116,7 +116,8 @@ redirect_from:
           Developed distributed training and inference workflows on university HPC (SLURM, Nova): multi-node GPU jobs, parallel data preprocessing, and reproducible experiment tracking with MLflow and Weights &amp; Biases across 1000+ concurrent tasks.
         </li>
         <li>
-          <strong>Agentic Retrieval-Augmented Text2CAD System (OpenSCAD)</strong><br>
+          <strong>CRAFT - Agentic Retrieval-Augmented Text2CAD System (OpenSCAD)</strong> - accepted at <strong>ICLAD 2026</strong>
+          [<a href="https://idealab-isu.github.io/CRAFT/" target="_blank">project page</a> | <a href="https://github.com/idealab-isu/CRAFT" target="_blank">code</a>]<br>
           <ul>
             <li>
               Architected a <strong>fully traceable multi-agent LLM pipeline</strong> using <strong>LangGraph</strong> for stateful orchestration—conditional execution paths, inter-agent communication protocols, and hierarchical task decomposition across <strong>six specialized agents</strong> (Reasoner, Planner, Compiler, Verifier, Repair, Assembler)—with <strong>structured logging at each agent decision point</strong>, producing parametric <strong>OpenSCAD</strong> from natural language.
@@ -135,6 +136,10 @@ redirect_from:
             </li>
           </ul>
         </li>
+        <li>
+          <strong>VISTA-CAD</strong><br>
+          Follow-up to CRAFT on iteratively refining parametric CAD programs using visual feedback. <em>Manuscript in preparation.</em>
+        </li>
       </ul>
     </div>
   </div>
@@ -143,6 +148,9 @@ redirect_from:
 <div class="cv-section-card">
   <h2>Publications</h2>
   <ul>
+    <li>
+      <strong>M. M. Rafi</strong>, A. Jignasu, M. Saraeian, C. Hegde, A. Balu, A. Krishnamurthy: "CRAFT: Corrective and Robust Multi-Agent Framework for Text-to-Parametric CAD", <strong>IEEE International Conference on LLM-Aided Design (ICLAD) 2026</strong>. <a href="https://idealab-isu.github.io/CRAFT/" target="_blank">[project page]</a> <a href="https://github.com/idealab-isu/CRAFT" target="_blank">[code]</a>
+    </li>
     <li>
       <strong>M. M. Rafi*</strong>, T. Ayanlade, B. Ganapathysubramanian, S. Sarkar, A. Krishnamurthy, C. Hegde, A. Balu: "Benchmarking Tabular Foundation Models for Agricultural Yield Prediction", <strong>AgriAI 2026 Workshop, AAAI 2026</strong>. <a href="https://openreview.net/forum?id=f5XUPRARlG" target="_blank">[article]</a>
     </li>
