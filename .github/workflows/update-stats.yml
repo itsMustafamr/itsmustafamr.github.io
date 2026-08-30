@@ -2,36 +2,58 @@ name: Update GitHub Stats
 
 on:
   schedule:
-    # Runs every hour
-    - cron: '0 * * * *'
+    # Once a day at 06:00 UTC. (Was hourly, which produced ~24 commits/day.)
+    - cron: '0 6 * * *'
   workflow_dispatch: # Allows manual trigger
 
 permissions:
   contents: write  # allow pushing changes
 
+# Never let two runs race on the same push.
+concurrency:
+  group: update-stats
+  cancel-in-progress: false
+
 jobs:
   update-stats:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
-      
+      uses: actions/checkout@v5
+
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.9'
-        
+
     - name: Install dependencies
       run: |
         pip install requests
-        
+
+    # An unauthenticated GitHub API caller gets 60 requests/hour, shared across
+    # every Actions runner on that IP -- which is why this job failed at random.
+    # Prefer the GRAPHQL PAT (it can read the contribution calendar), but verify
+    # it still works first and otherwise fall back to the built-in token, which
+    # is always valid and gets 5,000 requests/hour.
     - name: Update GitHub stats
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        PAT: ${{ secrets.GRAPHQL }}
+        FALLBACK_TOKEN: ${{ github.token }}
       run: |
-        python3 scripts/github_stats.py itsmustafamr
-        
+        TOKEN="$FALLBACK_TOKEN"
+        if [ -n "$PAT" ] && [ "$(curl -sS -o /dev/null -w '%{http_code}' \
+              -H "Authorization: token $PAT" https://api.github.com/rate_limit)" = "200" ]; then
+          TOKEN="$PAT"
+          echo "Using GRAPHQL PAT (full contribution calendar available)."
+        else
+          if [ -n "$PAT" ]; then
+            echo "::warning::GRAPHQL PAT was rejected (likely expired); falling back to the built-in GITHUB_TOKEN."
+          fi
+          echo "Using built-in GITHUB_TOKEN."
+        fi
+        GITHUB_TOKEN="$TOKEN" python3 scripts/github_stats.py itsmustafamr
+
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
@@ -42,11 +64,13 @@ jobs:
       run: |
         bundle install           # uses cached gems if unchanged
         bundle exec jekyll build
-        
+
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add assets/data/github_stats.json
         git commit -m "Auto-update GitHub stats" || exit 0
-        git push 
+        # Rebase in case master moved while this run was in flight.
+        git pull --rebase origin "${GITHUB_REF_NAME}"
+        git push origin "HEAD:${GITHUB_REF_NAME}"
