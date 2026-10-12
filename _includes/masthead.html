@@ -2,29 +2,29 @@
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist logo-item">
-            <a href="{{ base_path }}/">
-              <img src="{{ '/images/isu2line.png' | relative_url }}" alt="Site logo" style="height:72px"/>
-            </a>
-          </li>
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+    <nav class="site-nav" aria-label="Main">
+      <a class="site-nav__logo" href="{{ base_path }}/">
+        <img src="{{ '/images/isu2line.png' | relative_url }}" alt="Iowa State University">
+      </a>
+      <div class="site-nav__links">
+        {% for link in site.data.navigation.main %}
+          {% assign is_active = false %}
+          {% for prefix in link.match %}
+            {% assign url_head = page.url | slice: 0, prefix.size %}
+            {% if url_head == prefix %}{% assign is_active = true %}{% endif %}
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
+          <a href="{{ base_path }}{{ link.url }}"{% if is_active %} class="is-active" aria-current="page"{% endif %}>{{ link.title }}</a>
+        {% endfor %}
+      </div>
+      {% if site.data.navigation.cv_url %}
+        <a class="site-nav__cv" href="{{ site.data.navigation.cv_url }}" target="_blank" rel="noopener">
+          <i class="fa-solid fa-download" aria-hidden="true"></i> CV
+        </a>
+      {% endif %}
+      <!-- #theme-toggle / #theme-icon are wired up by assets/js/_main.js -->
+      <button type="button" id="theme-toggle" class="site-nav__theme" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
+      </button>
+    </nav>
   </div>
 </div>

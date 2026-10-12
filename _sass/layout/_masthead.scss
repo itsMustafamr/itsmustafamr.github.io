@@ -1,5 +1,8 @@
 /* ==========================================================================
    MASTHEAD
+   Single bar: ISU logo, section links (scroll sideways when they don't fit),
+   CV button, dark-mode toggle. Below $medium the links drop to a second row.
+   Behaviour lives in assets/js/nav.js.
    ========================================================================== */
 
 .masthead {
@@ -26,42 +29,142 @@
 
   &__inner-wrap {
     @include container;
-    @include clearfix;
-    padding: 0.5em 1em;
+    padding: 0.6em 1em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
     }
+  }
+}
 
-    nav {
-      z-index: 10;
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    display: flex;
+    margin-right: 14px;
+
+    /* The PNG is 16:9 with wide transparent margins: at 72px only ~43px is logo.
+       The negative margin keeps that size without making the bar taller. */
+    img {
+      height: 72px;
+      margin: -12px 0;
+    }
+  }
+
+  &__links {
+    position: relative; /* nav.js measures the links' offsetLeft against this row */
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    gap: 2px;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* fade whichever edge has more links hidden behind it (classes set by nav.js) */
+    &.fade-right {
+      -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 32px), transparent);
+              mask-image: linear-gradient(to right, #000 calc(100% - 32px), transparent);
+    }
+
+    &.fade-left {
+      -webkit-mask-image: linear-gradient(to right, transparent, #000 32px);
+              mask-image: linear-gradient(to right, transparent, #000 32px);
+    }
+
+    &.fade-left.fade-right {
+      -webkit-mask-image: linear-gradient(to right, transparent, #000 32px, #000 calc(100% - 32px), transparent);
+              mask-image: linear-gradient(to right, transparent, #000 32px, #000 calc(100% - 32px), transparent);
     }
 
     a {
-      text-decoration: none;
+      flex-shrink: 0;
+      padding: 5px 12px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      white-space: nowrap;
+      color: var(--global-masthead-link-color);
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+      /* (hover: hover) so a tap on a phone doesn't leave the outline stuck on */
+      @media (hover: hover) {
+        &:hover {
+          border-color: var(--global-border-color);
+        }
+      }
+
+      /* dark text on the link-colour fill: white is unreadable on the dark theme's light cyan */
+      &.is-active {
+        background: var(--global-link-color);
+        color: #061018;
+      }
     }
   }
-}
 
-.masthead__menu {
+  &__cv {
+    flex-shrink: 0;
+    padding: 5px 12px;
+    border: 1px solid var(--global-link-color);
+    border-radius: 999px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: var(--global-link-color);
 
-  ul {
-    margin: 0;
-    padding: 0;
-    clear: both;
-    list-style-type: none;
+    &:hover {
+      background: var(--global-link-color);
+      color: #061018;
+    }
   }
-}
 
-.masthead__menu-item {
-  background-color: var(--global-bg-color);
-  display: block;
-  list-style-type: none;
-  white-space: nowrap;
+  &__theme {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: none;
+    font-size: 1rem;
+    color: var(--global-masthead-link-color);
+    cursor: pointer;
 
-  &--lg {
-    padding-right: 2em;
-    font-weight: 700;
+    @media (hover: hover) {
+      &:hover {
+        border-color: var(--global-border-color);
+      }
+    }
+  }
+
+  /* Phones: logo, CV and toggle on the first row; the links get the full width below. */
+  @include breakpoint(max-width $medium - 1px) {
+    flex-wrap: wrap;
+    row-gap: 6px;
+
+    &__logo {
+      margin-right: auto;
+
+      img {
+        height: 60px;
+        margin: -10px 0;
+      }
+    }
+
+    &__links {
+      order: 1;
+      flex: 0 0 100%;
+    }
   }
 }

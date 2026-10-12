@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <div class="homepage-layout">
-  <div class="homepage-content">
+  <section id="about" class="home-section homepage-content">
     <div class="homepage-text">
       <h1>{{ site.author.name }}</h1>
       {% if site.author.pronouns %}<p class="author__pronouns">{{ site.author.pronouns }}</p>{% endif %}
@@ -24,7 +24,7 @@ redirect_from:
       <p>Check out my <a href="/projects/">Projects</a>, <a href="/teaching/">Teaching experience</a>, and <a href="/cv/">CV</a> for more details!</p>
 
       <p>
-        <a href="https://drive.google.com/file/d/1NSafYfmzddpe32ft9-ZsD5zoZeAHjO4B/view?usp=sharing" class="btn btn--primary" target="_blank" rel="noopener" aria-label="⬇">
+        <a href="{{ site.data.navigation.cv_url }}" class="btn btn--primary" target="_blank" rel="noopener" aria-label="⬇">
           <i class="fa-solid fa-download" aria-hidden="true"> CV</i>
         </a>Download my curriculum vitae.
         <!-- Feel free to reach out for any discussion. -->
@@ -87,9 +87,9 @@ redirect_from:
         {% endif %}
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="homepage-sections">
+  <section id="updates" class="home-section homepage-sections">
     <h2>Current Position</h2>
     <p>Research Assistant, lab of mechanics, Iowa State University</p>
 
@@ -113,9 +113,174 @@ redirect_from:
         <li>Mar 15, 2025  Winner, Applied AI Challenge 2025: Karma AI – Social Impact Award</li>
         <li>Feb 23, 2025  Constellation Prize, (Top 4 out of 30+ teams), Ivy Data Visualization & Storytelling Case Competition, Ivy College of Business</li>
       </ul>
+      <!-- Shown by home.js, which collapses the list to the newest few; without JS the full list stays visible. -->
+      <button type="button" class="updates-toggle" aria-expanded="false" hidden>Show all updates</button>
     </div>
-  </div>
+  </section>
+
+  <!-- Projects and publications are pulled from the _projects / _publications collections,
+       newest first, so they stay in sync with the full pages automatically. -->
+  {% assign home_projects = site.projects | sort: 'date' | reverse %}
+  <section id="projects" class="home-section">
+    <div class="home-section__head">
+      <h2>Projects</h2>
+      <a class="home-section__more" href="{{ '/projects/' | relative_url }}">All {{ home_projects.size }} projects &rarr;</a>
+    </div>
+    <div class="home-projects">
+      {% for project in home_projects limit: 6 %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  </section>
+
+  {% assign home_pubs = site.publications | sort: 'date' | reverse %}
+  <section id="publications" class="home-section">
+    <div class="home-section__head">
+      <h2>Publications</h2>
+      <a class="home-section__more" href="{{ '/publications/' | relative_url }}">All publications &rarr;</a>
+    </div>
+    <div class="home-pubs">
+      {% for pub in home_pubs limit: 3 %}
+        <article class="home-pub">
+          <h3 class="home-pub__title"><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h3>
+          <p class="home-pub__venue"><i>{{ pub.venue }}</i> &middot; {{ pub.date | date: "%Y" }}</p>
+          {% if pub.excerpt %}<p class="home-pub__summary">{{ pub.excerpt | strip_html | truncatewords: 40 }}</p>{% endif %}
+          <p class="home-pub__links">
+            {% if pub.paperurl %}<a href="{{ pub.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+            {% if pub.codeurl %}<a href="{{ pub.codeurl }}" target="_blank" rel="noopener">Code</a>{% endif %}
+            {% if pub.projecturl %}<a href="{{ pub.projecturl }}" target="_blank" rel="noopener">Project page</a>{% endif %}
+            <a href="{{ pub.url | relative_url }}">Details</a>
+          </p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Condensed from the CV page; keep in sync when the CV changes. -->
+  <section id="experience" class="home-section">
+    <div class="home-section__head">
+      <h2>Experience &amp; Education</h2>
+      <a class="home-section__more" href="{{ '/cv/' | relative_url }}">Full CV &rarr;</a>
+    </div>
+
+    <h3 class="home-subhead">Experience</h3>
+    <div class="cv-edu-item">
+      <span class="cv-edu-years">Aug 2026 - Dec 2026</span>
+      <div class="cv-edu-details">
+        <strong>AI Research Engineering Intern, Translational Research</strong><br>
+        <span class="cv-edu-institution"><i class="fa fa-building"></i> Multiple Myeloma Research Foundation (MMRF) - Remote, Norwalk, CT</span>
+        <ul>
+          <li>Building an agentic AI research copilot for the MMRF <strong>Virtual Lab</strong> platform (Gen3 data commons on <strong>AWS</strong>), turning natural-language research questions into cohort discovery and analysis over <strong>multi-omic and clinical myeloma datasets</strong> with LLMs, RAG, and platform APIs.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv-edu-item">
+      <span class="cv-edu-years">Aug 2024 - Present</span>
+      <div class="cv-edu-details">
+        <strong>Graduate Research Assistant</strong><br>
+        <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University - Translational AI Center (IdeaLab), Ames, IA</span>
+        <ul>
+          <li><strong>CRAFT</strong> (IEEE ICLAD 2026): six-agent <strong>LangGraph</strong> pipeline that turns natural language into parametric OpenSCAD, with RAG over 500+ CAD artifacts; raised compilation success from <strong>68% to 89%</strong> and schema pass rate from <strong>73% to 94%</strong>.</li>
+          <li><strong>VISTA-CAD</strong>: refining parametric CAD programs with visual feedback (manuscript in preparation).</li>
+          <li>TabPFN forecasting on industrial IoT (R² 0.881, ~100× faster training), NeRF pipelines, and distributed ML on university HPC (SLURM).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv-edu-item">
+      <span class="cv-edu-years">Aug 2023 - Aug 2024</span>
+      <div class="cv-edu-details">
+        <strong>Graduate Teaching Assistant</strong><br>
+        <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Department of Computer Science</span>
+        <ul>
+          <li><strong>COM S 309</strong> (Software Development Practices): mentored 8 teams (40+ students) building full-stack apps with Spring Boot, React, and MySQL.</li>
+          <li><strong>COM S 336</strong> (Computer Graphics): weekly office hours for 60+ students on OpenGL, shaders, and ray tracing; 4.8/5.0 teaching rating.</li>
+          <li><a href="{{ '/teaching/' | relative_url }}">Teaching details &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="home-subhead">Education</h3>
+    <div class="cv-edu-item">
+      <span class="cv-edu-years">Aug 2023 - Present</span>
+      <div class="cv-edu-details">
+        <strong>Ph.D. Candidate in Computer Science</strong><br>
+        <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Ames, IA &middot; GPA 3.93/4.00</span>
+      </div>
+    </div>
+    <div class="cv-edu-item">
+      <span class="cv-edu-years">Aug 2023 - May 2026</span>
+      <div class="cv-edu-details">
+        <strong>M.S. in Artificial Intelligence</strong><br>
+        <span class="cv-edu-institution"><i class="fa fa-university"></i> Iowa State University, Ames, IA &middot; GPA 3.92/4.00</span>
+      </div>
+    </div>
+    <div class="cv-edu-item">
+      <span class="cv-edu-years">Jul 2018 - Jul 2022</span>
+      <div class="cv-edu-details">
+        <strong>B.S. in Electrical and Electronics Engineering</strong><br>
+        <span class="cv-edu-institution"><i class="fa fa-university"></i> APJ Abdul Kalam Technological University, Kerala, India &middot; Dean's List</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="home-section">
+    <div class="home-section__head">
+      <h2>Skills</h2>
+      <a class="home-section__more" href="{{ '/cv/' | relative_url }}">Full CV &rarr;</a>
+    </div>
+    <div class="home-skills">
+      <div class="home-skills__group">
+        <h3>LLM Systems</h3>
+        <ul><li>Multi-Agent Orchestration</li><li>RAG Pipelines</li><li>LangGraph</li><li>LangChain</li><li>Prompt Engineering</li><li>Fine-tuning &amp; Post-Training</li></ul>
+      </div>
+      <div class="home-skills__group">
+        <h3>ML / AI Frameworks</h3>
+        <ul><li>PyTorch</li><li>TensorFlow</li><li>JAX</li><li>Hugging Face Transformers</li></ul>
+      </div>
+      <div class="home-skills__group">
+        <h3>HPC &amp; Distributed</h3>
+        <ul><li>SLURM</li><li>MPI</li><li>OpenMP</li><li>CUDA</li><li>Multi-GPU / Multi-Node Training</li></ul>
+      </div>
+      <div class="home-skills__group">
+        <h3>Edge AI</h3>
+        <ul><li>NVIDIA Jetson Orin Nano</li><li>llama.cpp</li><li>whisper.cpp</li><li>Ollama</li><li>On-Device Inference</li></ul>
+      </div>
+      <div class="home-skills__group">
+        <h3>Languages</h3>
+        <ul><li>Python</li><li>C++</li><li>CUDA C/C++</li><li>SQL</li><li>Java</li><li>JavaScript</li><li>Swift</li><li>Bash</li></ul>
+      </div>
+      <div class="home-skills__group">
+        <h3>Infrastructure &amp; Tools</h3>
+        <ul><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>GCP</li><li>MLflow</li><li>Weights &amp; Biases</li><li>Git</li><li>CI/CD</li></ul>
+      </div>
+      <div class="home-skills__group">
+        <h3>CAD &amp; Engineering</h3>
+        <ul><li>OpenSCAD</li><li>SolidWorks</li><li>ANSYS</li><li>FEA</li><li>CFD</li></ul>
+      </div>
+      <div class="home-skills__group">
+        <h3>Data &amp; Visualization</h3>
+        <ul><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Plotly</li><li>ParaView</li><li>VTK</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="home-section">
+    <div class="home-section__head">
+      <h2>Contact</h2>
+      <a class="home-section__more" href="{{ '/contact/' | relative_url }}">All contact details &rarr;</a>
+    </div>
+    <p>Email is the quickest way to reach me.</p>
+    <div class="home-contact">
+      {% if site.author.email %}<a class="home-btn home-btn--primary" href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>{% endif %}
+      <a class="home-btn home-btn--primary" href="{{ site.data.navigation.cv_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-download" aria-hidden="true"></i> CV</a>
+      <a class="home-btn" href="https://linkedin.com/in/mohammed-musthafa-r/" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      {% if site.author.github %}<a class="home-btn" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>{% endif %}
+      {% if site.author.googlescholar %}<a class="home-btn" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>{% endif %}
+    </div>
+  </section>
 </div>
+
+<script src="{{ '/assets/js/home.js' | relative_url }}" defer></script>
 
 <style>
 .homepage-layout {
@@ -124,11 +289,61 @@ redirect_from:
   padding: 20px;
 }
 
+/* Sections */
+.home-section {
+  /* land each section just under the fixed nav bar (height set by nav.js); the -1px
+     tucks the section's divider under the bar's own border so only one line shows */
+  scroll-margin-top: calc(var(--masthead-h, 70px) - 1px);
+}
+
+.home-section + .home-section {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.home-section__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 20px;
+}
+
+.home-section__head h2 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.home-section__more {
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
+.home-subhead {
+  margin: 28px 0 16px;
+  font-size: 1.2em;
+}
+
+.home-section__head + .home-subhead {
+  margin-top: 0;
+}
+
+/* equal-width date badges so the entries line up */
+.home-section .cv-edu-years {
+  flex: 0 0 auto;
+  width: 12.5em;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
 .homepage-content {
   display: flex;
   align-items: flex-start;
   gap: 40px;
-  margin-bottom: 40px;
 }
 
 .homepage-text {
@@ -210,6 +425,10 @@ redirect_from:
   font-weight: bold;
 }
 
+.homepage-sections h2:first-child {
+  margin-top: 0;
+}
+
 .updates-block {
   background-color: var(--global-bg-color);
   border-left: 4px solid var(--global-link-color);
@@ -228,14 +447,158 @@ redirect_from:
   line-height: 1.5;
 }
 
+.updates-block.is-collapsed li:nth-child(n+6) {
+  display: none;
+}
+
+.updates-toggle {
+  margin-top: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.95em;
+  color: var(--global-link-color);
+  cursor: pointer;
+}
+
+.updates-toggle:hover {
+  text-decoration: underline;
+}
+
 .about-heading {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 0.3em;
 }
 
+/* Projects: reuse the /projects/ cards in a grid */
+.home-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 28px;
+}
+
+.home-projects .project-card {
+  margin-bottom: 0 !important; /* card ships inline spacing for the stacked layout */
+}
+
+/* Publications */
+.home-pub {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.home-pub:first-child {
+  padding-top: 0;
+}
+
+.home-pub:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.home-pub__title {
+  margin: 0 0 6px;
+  font-size: 1.15em;
+  line-height: 1.35;
+}
+
+.home-pub__venue {
+  margin: 0 0 8px;
+  color: var(--global-text-color-light);
+  font-size: 0.95em;
+}
+
+.home-pub__summary {
+  margin: 0 0 8px;
+  font-size: 0.95em;
+  line-height: 1.55;
+}
+
+.home-pub__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* Skills */
+.home-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+  gap: 24px;
+}
+
+.home-skills__group h3 {
+  margin: 0 0 10px;
+  font-size: 1em;
+}
+
+.home-skills__group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-skills .home-skills__group li {
+  margin: 0;
+  padding: 3px 10px;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  font-size: 0.85em;
+}
+
+/* Contact */
+.home-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Own button style: the theme's .btn--primary renders as bare text in dark mode.
+   Link rules below are prefixed with .homepage-layout to outrank custom.css's .page__content a. */
+.homepage-layout a.home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.homepage-layout a.home-btn:hover {
+  border-color: var(--global-link-color);
+  color: var(--global-link-color);
+  text-decoration: none;
+}
+
+.homepage-layout a.home-btn--primary,
+.homepage-layout a.home-btn--primary:hover {
+  background: var(--global-link-color);
+  border-color: var(--global-link-color);
+  color: #061018;
+}
+
+.homepage-layout a.home-btn--primary:hover {
+  filter: brightness(1.1);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
+  .homepage-layout {
+    padding: 16px;
+  }
+
   .homepage-content {
     flex-direction: column;
     align-items: center;
@@ -259,6 +622,22 @@ redirect_from:
   
   .contact-item {
     justify-content: center;
+  }
+
+  .home-section__head h2 {
+    font-size: 1.5em;
+  }
+
+  /* stack the date badge above the entry on narrow screens */
+  .home-section .cv-edu-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .home-section .cv-edu-years {
+    align-self: flex-start;
+    width: auto;
+    margin-right: 0;
   }
 }
 </style>

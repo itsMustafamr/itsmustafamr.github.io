@@ -1,43 +1,38 @@
-# The following is the order of the links in the header of the website.
+# The main navigation bar (rendered by _includes/masthead.html on every page).
 #
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
+# Each link jumps to a section of the single-page homepage. On the homepage the
+# active link follows your scroll position; on any other page the link whose
+# `match` prefix starts that page's URL is highlighted instead
+# (e.g. a project page at /projects/narrait/ highlights "Projects").
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# The full pages (/projects/, /publications/, /cv/, /teaching/, /contact/, ...)
+# still exist and are linked from each homepage section.
 
 main:
-  - title: "CV"
-    url: /cv/
+  - title: "About"
+    url: /#about
+
+  - title: "Updates"
+    url: /#updates
 
   - title: "Projects"
-    url: /projects/
-
-  - title: "Teaching"
-    url: /teaching/
+    url: /#projects
+    match: ["/projects/", "/portfolio/"]
 
   - title: "Publications"
-    url: /publications/
+    url: /#publications
+    match: ["/publication"]
 
-  - title: "Research"
-    url: /research/
+  - title: "Experience"
+    url: /#experience
+    match: ["/cv", "/teaching"]
 
-  - title: "Focus"
-    url: /focus/
+  - title: "Skills"
+    url: /#skills
 
-  - title: "Repositories"
-    url: /repositories/
-        
-  # add Contact nav item
   - title: "Contact"
-    url: /contact/
-    
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  # - title: "Guide"
-  #   url: /markdown/
+    url: /#contact
+    match: ["/contact"]
+
+# The "CV" download button at the right end of the bar (also used on the homepage).
+cv_url: "https://drive.google.com/file/d/1NSafYfmzddpe32ft9-ZsD5zoZeAHjO4B/view?usp=sharing"
